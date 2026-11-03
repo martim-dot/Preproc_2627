@@ -1,0 +1,38 @@
+Feature Name,Category,Definition & Calculation Logic
+Patient ID,Static / ID,"Unique identifier for each patient (1 row per patient, N=500)."
+Age,Static Demographic,"Patient age in years (most recent valid record, KNN-imputed if missing)."
+Gender,Static Demographic,"Patient gender (Female, Male, Other); standardized to most recent visit."
+City_of_Residence,Static Demographic,Patient city of residence across 8 UK/Irish cities.
+Profession,Static Socio-Economic,Patient occupation (standardized to most recent visit; <18 set to Student).
+Insurance_Provider,Static Financial,"Provider A, B, C, D, or 'Uninsured' for patients with no policy."
+Family_History,Static Clinical,"Recorded family medical history (Cancer, Diabetes, Heart Disease, Hypertension, None)."
+Education_Level,Static Socio-Economic,Highest educational attainment (Pre-school to PhD; KNN-imputed).
+Marital_Status,Static Demographic,"Marital status (Single, Married, Divorced, Widowed; standardized)."
+Approx_Annual_Income,Static Socio-Economic,Mean cleaned annual income (£) across patient consultations.
+Age_Group_10yr,Static Derived,"10-year age bracket (0-9, 10-19, ..., 90+) for demographic segmentation."
+Income_Quartile,Static Derived,Patient income quartile (Q1 Lowest to Q4 Highest).
+Total_Visits,Visit Behaviour,"Total number of hospital consultations between Jan 1 and Jun 30, 2024."
+Distinct_Departments,Visit Behaviour,Number of unique hospital departments visited by the patient.
+Most_Frequent_Department,Visit Behaviour,Modal (most frequently visited) department for the patient.
+Avg_Consultation_Duration,Visit Behaviour,Mean consultation duration in minutes (post-IQR Winsorization).
+Total_Consultation_Duration,Visit Behaviour,Cumulative consultation duration in minutes across all visits.
+Weekend_Visits,Visit Behaviour,Count of consultations occurring on Saturday or Sunday.
+Weekday_Visits,Visit Behaviour,Count of consultations occurring Monday through Friday.
+Weekend_to_Weekday_Ratio,Visit Behaviour,"Ratio of weekend visits to weekday visits (Weekend / max(1, Weekday))."
+Weekend_Visit_Share,Visit Behaviour,Proportion of total visits occurring on weekends.
+Total_Consultation_Price,Financial,Cumulative gross consultation cost (£) across all visits.
+Avg_Consultation_Price,Financial,Mean gross price (£) per consultation.
+Total_Insurance_Coverage,Financial,Cumulative amount (£) covered and paid by the insurance provider.
+Avg_Insurance_Coverage,Financial,Mean insurance coverage amount (£) per consultation.
+Total_Out_of_Pocket,Financial,Total out-of-pocket expenditure (£) paid by the patient (Price - Coverage).
+Avg_Out_of_Pocket,Financial,Mean out-of-pocket cost (£) per consultation.
+Out_of_Pocket_Ratio,Financial,Share of total consultation price paid out-of-pocket by the patient.
+Avg_Satisfaction_Rating,Satisfaction,"Mean consultation satisfaction score (1 = lowest, 5 = highest)."
+Min_Satisfaction_Rating,Satisfaction,Minimum satisfaction rating recorded across any visit.
+Max_Satisfaction_Rating,Satisfaction,Maximum satisfaction rating recorded across any visit.
+Low_Rating_Count,Satisfaction,Total count of dissatisfied visits with rating <= 2.
+Share_Low_Ratings,Satisfaction,Proportion of patient visits rated <= 2 (dissatisfaction rate).
+Days_Since_First_Visit,Recency & Activity,"Days elapsed from the patient's first visit to July 1, 2024."
+Days_Since_Last_Visit,Recency & Activity,"Days elapsed from the patient's most recent visit to July 1, 2024."
+Active_Span_Days,Recency & Activity,Number of days between the patient's first and last recorded visit.
+Visits_Per_Month,Recency & Activity,Average monthly consultation frequency over the 6-month period (Total_Visits / 6).

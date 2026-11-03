@@ -47,10 +47,10 @@ def load_data(filepath: str = None) -> pd.DataFrame:
     Prints dimensions, data types, missing values, and unique patient counts.
     """
     if filepath is None:
-        if os.path.exists("Project_Data.xlsx"):
-            filepath = "Project_Data.xlsx"
-        elif os.path.exists("Project Data.xlsx"):
-            filepath = "Project Data.xlsx"
+        if os.path.exists("Project_Data nova.xlsx"):
+            filepath = "Project_Data nova.xlsx"
+        elif os.path.exists("Project Data nova.xlsx"):
+            filepath = "Project Data nova.xlsx"
         else:
             raise FileNotFoundError(
                 "Could not find 'Project_Data.xlsx' or 'Project Data.xlsx' in current directory."
