@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 City Hospital - End-to-End Data Preprocessing, ABT Construction, EDA & PDF Reporting
 Author: Expert Data Scientist & Python Developer
