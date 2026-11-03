@@ -1,0 +1,501 @@
+Patient ID,Age,Gender,City,Profession,Insurance_Provider,Family_History,Education_Level,Marital_Status,Annual_Income,Total_Visits,Distinct_Departments,Top_Department,Avg_Duration,Weekend_Visits,Total_Price,Total_Coverage,Total_Out_of_Pocket,Avg_Satisfaction,Low_Rating_Count,Age_Group,Income_Quartile,Weekend_Share,Out_of_Pocket_Ratio,Share_Low_Ratings,Days_Since_Last_Visit,Active_Span_Days,Visits_Per_Month
+1000,51.0,Female,Birmingham,Artist,Provider D,Hypertension,Undergraduate,Divorced,43667.25,20,10,Allergology,65.7,6,3504.03,3504.03,0.0,2.6,10,50-59,Q2,0.3,0.0,0.5,4,178,3.33
+1001,55.0,Male,Liverpool,Lawyer,Provider C,Heart Disease,Undergraduate,Married,44214.44,16,10,ENT,60.5,5,2396.99,1677.89,719.1,3.19,6,50-59,Q3,0.31,0.3,0.38,4,177,2.67
+1002,10.0,Female,Liverpool,Student,Provider C,Cancer,Elementary school,Single,0.0,18,10,Psychiatry,71.06,6,2919.25,2043.48,875.78,3.44,4,10-19,Q1 (Lowest),0.33,0.3,0.22,8,169,3.0
+1003,91.0,Male,Manchester,Retired,Provider A,Cancer,Master,Married,42711.66,25,11,Psychiatry,61.4,5,4486.11,3588.89,897.22,3.24,9,90-99,Q2,0.2,0.2,0.36,2,178,4.17
+1004,11.0,Male,Glasgow,Student,Provider B,Cancer,Middle school/junior high,Single,0.0,26,9,General Practice,62.65,5,4486.14,4037.53,448.61,3.27,10,10-19,Q1 (Lowest),0.19,0.1,0.38,3,179,4.33
+1005,60.0,Female,Edinburgh,Teacher,Uninsured,None,Master,Widowed,45726.45,29,10,General Practice,62.24,7,4935.56,0.0,4935.56,3.24,8,60-69,Q3,0.24,1.0,0.28,2,176,4.83
+1006,12.0,Male,Liverpool,Student,Provider A,Heart Disease,Middle school/junior high,Single,0.0,18,8,Rheumatology,57.11,6,2784.19,2227.35,556.84,3.0,7,10-19,Q1 (Lowest),0.33,0.2,0.39,1,175,3.0
+1007,40.0,Other,Birmingham,Scientist,Provider C,Cancer,Undergraduate,Single,44494.28,16,8,Psychiatry,69.44,5,3109.11,2176.38,932.73,2.69,8,40-49,Q3,0.31,0.3,0.5,4,175,2.67
+1008,61.0,Female,Birmingham,Lawyer,Provider C,Hypertension,Undergraduate,Divorced,46696.45,22,9,Psychiatry,59.0,7,3739.71,2617.8,1121.91,3.0,11,60-69,Q4 (Highest),0.32,0.3,0.5,9,165,3.67
+1009,20.0,Other,Liverpool,Artist,Provider C,None,Undergraduate,Married,46352.13,23,10,Psychiatry,72.54,10,3898.64,2729.05,1169.59,3.35,6,20-29,Q4 (Highest),0.43,0.3,0.26,9,164,3.83
+1010,2.0,Other,Birmingham,Student,Provider C,Heart Disease,Pre-school,Single,0.0,20,10,Dermatology,57.5,5,2964.8,2075.36,889.44,2.9,9,0-9,Q1 (Lowest),0.25,0.3,0.45,6,163,3.33
+1011,11.0,Female,London,Student,Uninsured,None,Middle school/junior high,Single,0.0,16,8,Psychiatry,67.44,4,2412.37,0.0,2412.37,2.5,7,10-19,Q1 (Lowest),0.25,1.0,0.44,15,134,2.67
+1012,7.0,Other,Dublin,Student,Uninsured,Hypertension,Elementary school,Single,0.0,32,13,Psychiatry,76.5,8,5655.72,0.0,5655.72,3.53,7,0-9,Q1 (Lowest),0.25,1.0,0.22,7,169,5.33
+1013,92.0,Female,Dublin,Retired,Uninsured,Cancer,Undergraduate,Divorced,46240.58,18,11,Rheumatology,62.5,5,3250.43,2275.3,975.13,3.17,7,90-99,Q4 (Highest),0.28,0.3,0.39,2,179,3.0
+1014,71.0,Male,Birmingham,Retired,Uninsured,Hypertension,Undergraduate,Divorced,42521.67,24,10,Endocrinology,63.38,5,4168.15,3751.33,416.81,2.92,11,70-79,Q2,0.21,0.1,0.46,3,179,4.0
+1015,1.0,Female,Manchester,Student,Provider B,Heart Disease,Pre-school,Single,0.0,22,10,General Practice,86.0,4,3617.22,3255.5,361.72,2.95,8,0-9,Q1 (Lowest),0.18,0.1,0.36,31,124,3.67
+1016,97.0,Other,Belfast,Retired,Uninsured,Cancer,Undergraduate,Widowed,45669.88,21,11,General Practice,64.67,7,2992.48,0.0,2992.48,2.71,10,90-99,Q3,0.33,1.0,0.48,2,171,3.5
+1017,79.0,Female,Liverpool,Retired,Provider A,Diabetes,Undergraduate,Divorced,47727.12,17,9,Psychiatry,66.82,8,3043.32,2434.66,608.66,3.41,5,70-79,Q4 (Highest),0.47,0.2,0.29,8,171,2.83
+1018,95.0,Female,Belfast,Retired,Provider C,Heart Disease,Master,Divorced,44460.05,21,12,Psychiatry,73.67,11,3090.95,2163.67,927.29,3.1,7,90-99,Q3,0.52,0.3,0.33,5,172,3.5
+1019,74.0,Other,Dublin,Retired,Provider A,Heart Disease,Undergraduate,Widowed,42792.14,21,9,Psychiatry,71.0,3,3351.02,2680.82,670.2,3.38,7,70-79,Q2,0.14,0.2,0.33,6,166,3.5
+1020,11.0,Female,Birmingham,Student,Provider D,Diabetes,Middle school/junior high,Single,0.0,21,11,Psychiatry,67.62,7,3523.67,3523.67,0.0,2.71,12,10-19,Q1 (Lowest),0.33,0.0,0.57,6,175,3.5
+1021,14.0,Male,London,Student,Provider B,None,High school,Single,0.0,17,8,Orthopedics,59.65,3,3169.89,2857.91,311.98,2.94,8,10-19,Q1 (Lowest),0.18,0.1,0.47,26,146,2.83
+1022,24.0,Male,Dublin,Artist,Provider D,Cancer,Undergraduate,Single,44693.0,18,8,Psychiatry,68.83,4,2652.11,2652.11,0.0,3.33,5,20-29,Q3,0.22,0.0,0.28,1,181,3.0
+1023,82.0,Female,London,Retired,Uninsured,Hypertension,Master,Married,44580.84,25,12,Psychiatry,66.68,9,3548.93,0.0,3548.93,3.28,7,80-89,Q3,0.36,1.0,0.28,9,162,4.17
+1024,69.0,Other,Glasgow,Retired,Provider A,Cancer,Undergraduate,Married,44681.43,14,9,Pulmonology,81.96,6,2352.18,1881.74,470.44,3.21,6,60-69,Q3,0.43,0.2,0.43,33,144,2.33
+1025,99.0,Female,Edinburgh,Retired,Provider C,None,Master,Widowed,47458.82,22,9,Dermatology,67.55,6,3115.03,2180.52,934.51,3.64,6,90-99,Q4 (Highest),0.27,0.3,0.27,10,156,3.67
+1026,14.0,Male,Belfast,Student,Provider D,None,High school,Single,0.0,13,10,Gastroenterology,73.69,3,2369.64,2114.1,255.54,2.85,5,10-19,Q1 (Lowest),0.23,0.11,0.38,29,152,2.17
+1027,0.0,Other,Liverpool,Student,Provider B,Cancer,Pre-school,Single,0.0,20,10,Dermatology,71.5,5,3657.38,3291.64,365.74,3.25,6,0-9,Q1 (Lowest),0.25,0.1,0.3,18,163,3.33
+1028,41.0,Male,Birmingham,Engineer,Provider D,Diabetes,Undergraduate,Married,47452.5,12,6,General Practice,79.83,4,1569.12,1569.12,0.0,3.92,1,40-49,Q4 (Highest),0.33,0.0,0.08,7,127,2.0
+1029,16.0,Male,Dublin,Student,Uninsured,Cancer,High school,Single,0.0,24,11,Psychiatry,56.96,4,3772.75,0.0,3772.75,3.58,3,10-19,Q1 (Lowest),0.17,1.0,0.12,8,172,4.0
+1030,30.0,Female,Belfast,Teacher,Provider C,Heart Disease,Undergraduate,Divorced,45100.81,21,10,Emergency,66.9,4,3744.59,2621.21,1123.38,3.52,4,30-39,Q3,0.19,0.3,0.19,4,177,3.5
+1031,71.0,Female,Glasgow,Retired,Provider C,Cancer,Master,Divorced,45626.96,25,11,Pulmonology,74.44,6,3886.73,2720.71,1166.02,2.88,10,70-79,Q3,0.24,0.3,0.4,3,166,4.17
+1032,18.0,Male,Belfast,Student,Provider A,None,High school,Single,0.0,20,10,Psychiatry,58.6,2,3324.85,2659.88,664.97,3.0,7,10-19,Q1 (Lowest),0.1,0.2,0.35,27,152,3.33
+1033,90.0,Other,Dublin,Retired,Provider B,Hypertension,Undergraduate,Widowed,43676.0,21,11,General Practice,60.9,6,2988.96,2690.07,298.9,3.48,6,90-99,Q2,0.29,0.1,0.29,2,176,3.5
+1034,93.0,Other,Liverpool,Retired,Provider C,None,Undergraduate,Married,44587.52,21,11,General Practice,76.05,8,3224.34,2257.04,967.3,3.38,6,90-99,Q3,0.38,0.3,0.29,7,156,3.5
+1035,23.0,Other,Manchester,Scientist,Provider C,Diabetes,Master,Single,47316.56,18,9,General Practice,70.56,6,2664.06,1864.84,799.22,3.56,3,20-29,Q4 (Highest),0.33,0.3,0.17,13,123,3.0
+1036,78.0,Other,Liverpool,Retired,Provider B,Diabetes,Undergraduate,Divorced,45074.32,22,11,General Practice,78.64,4,3256.5,2930.85,325.65,3.27,7,70-79,Q3,0.18,0.1,0.32,6,173,3.67
+1037,74.0,Other,Dublin,Retired,Provider D,Diabetes,Undergraduate,Widowed,45441.68,31,12,Psychiatry,72.48,8,5478.61,5478.61,0.0,3.68,6,70-79,Q3,0.26,0.0,0.19,1,173,5.17
+1038,20.0,Male,Dublin,Lawyer,Provider B,Cancer,Undergraduate,Single,44167.13,15,9,General Practice,65.07,7,2286.73,2058.06,228.67,3.0,6,20-29,Q3,0.47,0.1,0.4,6,162,2.5
+1039,100.0,Male,Dublin,Retired,Provider C,Diabetes,Undergraduate,Widowed,43314.5,16,10,Allergology,57.75,6,2391.72,1674.2,717.52,4.06,1,,Q2,0.38,0.3,0.06,5,165,2.67
+1040,12.0,Male,Manchester,Student,Provider C,Diabetes,Middle school/junior high,Single,0.0,20,11,General Practice,72.5,6,3394.93,2376.45,1018.48,3.35,8,10-19,Q1 (Lowest),0.3,0.3,0.4,9,162,3.33
+1041,79.0,Female,Edinburgh,Retired,Provider B,Hypertension,Master,Widowed,48323.15,26,12,Rheumatology,68.81,10,4182.71,3764.44,418.27,3.54,8,70-79,Q4 (Highest),0.38,0.1,0.31,10,165,4.33
+1042,60.0,Other,London,Engineer,Provider D,Hypertension,Undergraduate,Married,45355.0,14,9,Psychiatry,74.79,5,2324.44,2324.44,0.0,3.14,6,60-69,Q3,0.36,0.0,0.43,17,159,2.33
+1043,90.0,Female,Edinburgh,Retired,Provider A,Cancer,Master,Married,47862.92,13,8,General Practice,58.69,1,2082.26,1665.81,416.45,2.77,5,90-99,Q4 (Highest),0.08,0.2,0.38,6,175,2.17
+1044,72.0,Female,Liverpool,Retired,Provider B,Cancer,Master,Married,41885.67,18,9,General Practice,63.39,4,3192.78,2873.5,319.28,3.5,5,70-79,Q2,0.22,0.1,0.28,19,131,3.0
+1045,19.0,Female,Edinburgh,Nurse,Provider D,Cancer,Undergraduate,Married,42884.24,21,11,Psychiatry,76.14,6,3379.9,3379.9,0.0,3.14,10,10-19,Q2,0.29,0.0,0.48,5,175,3.5
+1046,29.0,Other,Edinburgh,Artist,Provider C,Hypertension,Undergraduate,Single,42472.71,14,7,General Practice,68.5,3,1862.4,1303.68,558.72,3.29,5,20-29,Q2,0.21,0.3,0.36,24,146,2.33
+1047,68.0,Male,Edinburgh,Retired,Provider B,Cancer,Undergraduate,Divorced,46206.21,24,12,Neurology,66.38,8,3808.52,3427.67,380.85,2.96,10,60-69,Q4 (Highest),0.33,0.1,0.42,1,173,4.0
+1048,98.0,Other,Dublin,Retired,Provider A,Hypertension,Undergraduate,Divorced,45544.47,15,8,Neurology,60.07,3,2836.79,2269.43,567.36,2.67,8,90-99,Q3,0.2,0.2,0.53,5,156,2.5
+1049,55.0,Other,Edinburgh,Teacher,Provider A,None,Undergraduate,Widowed,45833.67,18,11,Emergency,56.44,7,3390.48,2712.38,678.1,2.78,8,50-59,Q3,0.39,0.2,0.44,7,169,3.0
+1050,40.0,Female,Birmingham,Businessperson,Provider C,Diabetes,Master,Single,44536.18,17,9,Dermatology,69.88,3,2569.01,1798.3,770.7,3.65,5,40-49,Q3,0.18,0.3,0.29,16,159,2.83
+1051,29.0,Female,Liverpool,Scientist,Provider D,Cancer,Undergraduate,Married,47220.21,14,8,Psychiatry,74.36,1,2471.97,2471.97,0.0,2.43,10,20-29,Q4 (Highest),0.07,0.0,0.71,5,152,2.33
+1052,0.0,Male,Edinburgh,Student,Provider A,Diabetes,Pre-school,Single,0.0,21,10,General Practice,83.38,6,2824.68,2259.74,564.94,3.52,6,0-9,Q1 (Lowest),0.29,0.2,0.29,1,179,3.5
+1053,56.0,Male,Glasgow,Businessperson,Uninsured,Hypertension,Undergraduate,Divorced,44663.45,22,10,Psychiatry,75.32,4,3723.71,0.0,3723.71,3.14,7,50-59,Q3,0.18,1.0,0.32,7,159,3.67
+1054,100.0,Female,Belfast,Retired,Uninsured,None,Master,Divorced,44642.0,23,10,General Practice,73.35,5,3341.13,0.0,3341.13,3.0,8,,Q3,0.22,1.0,0.35,5,177,3.83
+1055,61.0,Female,Edinburgh,Lawyer,Provider A,Heart Disease,Master,Married,46811.89,28,13,ENT,65.75,10,4508.63,3606.9,901.73,3.5,6,60-69,Q4 (Highest),0.36,0.2,0.21,11,165,4.67
+1056,78.0,Other,Dublin,Retired,Uninsured,Heart Disease,Master,Married,43859.32,19,10,Allergology,58.79,4,3886.89,0.0,3886.89,2.79,10,70-79,Q2,0.21,1.0,0.53,37,145,3.17
+1057,42.0,Female,Glasgow,Teacher,Provider C,Diabetes,Undergraduate,Divorced,39658.78,9,7,Psychiatry,83.78,3,1532.17,1072.52,459.65,2.33,6,40-49,Q1 (Lowest),0.33,0.3,0.67,9,158,1.5
+1058,93.0,Male,Edinburgh,Retired,Uninsured,None,Undergraduate,Divorced,46270.2,20,10,Neurology,60.1,5,2975.7,0.0,2975.7,2.95,7,90-99,Q4 (Highest),0.25,1.0,0.35,9,165,3.33
+1059,91.0,Female,Dublin,Retired,Provider C,Hypertension,Master,Married,44221.47,18,8,Psychiatry,67.5,5,2643.65,1850.56,793.1,3.28,7,90-99,Q3,0.28,0.3,0.39,6,173,3.0
+1060,53.0,Male,Birmingham,Teacher,Uninsured,Heart Disease,Undergraduate,Divorced,43073.26,23,11,Dermatology,71.74,8,2958.5,0.0,2958.5,3.83,2,50-59,Q2,0.35,1.0,0.09,3,177,3.83
+1061,42.0,Female,London,Businessperson,Provider C,Heart Disease,Undergraduate,Married,46453.07,27,10,General Practice,64.7,5,4075.55,2852.89,1222.67,3.19,10,40-49,Q4 (Highest),0.19,0.3,0.37,18,161,4.5
+1062,15.0,Male,Birmingham,Student,Provider B,Hypertension,High school,Single,0.0,27,10,General Practice,64.37,7,4206.62,3785.96,420.66,3.19,10,10-19,Q1 (Lowest),0.26,0.1,0.37,11,164,4.5
+1063,13.0,Female,London,Student,Provider D,Diabetes,Middle school/junior high,Single,0.0,18,10,Psychiatry,74.72,4,2775.74,2775.74,0.0,3.56,5,10-19,Q1 (Lowest),0.22,0.0,0.28,23,159,3.0
+1064,15.0,Female,Manchester,Student,Provider D,Heart Disease,High school,Single,0.0,14,7,General Practice,80.79,4,2248.29,2248.29,0.0,3.21,5,10-19,Q1 (Lowest),0.29,0.0,0.36,5,171,2.33
+1065,55.0,Male,Glasgow,Nurse,Provider B,Heart Disease,Undergraduate,Divorced,46883.57,21,10,General Practice,67.43,5,3267.35,2940.61,326.73,3.71,6,50-59,Q4 (Highest),0.24,0.1,0.29,1,177,3.5
+1066,93.0,Male,London,Retired,Uninsured,None,Undergraduate,Divorced,47149.53,19,11,Neurology,71.05,6,3159.64,0.0,3159.64,3.26,7,90-99,Q4 (Highest),0.32,1.0,0.37,6,172,3.17
+1067,12.0,Female,Manchester,Student,Provider B,Diabetes,Middle school/junior high,Single,0.0,17,10,General Practice,66.06,3,2138.34,1924.5,213.83,3.41,6,10-19,Q1 (Lowest),0.18,0.1,0.35,5,176,2.83
+1068,13.0,Male,Belfast,Student,Provider D,Hypertension,Middle school/junior high,Single,0.0,13,7,Pulmonology,77.23,4,2153.47,2153.47,0.0,3.08,5,10-19,Q1 (Lowest),0.31,0.0,0.38,14,160,2.17
+1069,97.0,Female,Edinburgh,Retired,Provider D,Heart Disease,Master,Married,40924.07,15,11,Pulmonology,71.4,3,2347.75,2347.75,0.0,3.13,6,90-99,Q1 (Lowest),0.2,0.0,0.4,6,173,2.5
+1070,93.0,Female,London,Retired,Provider A,None,Undergraduate,Widowed,46862.45,19,7,General Practice,67.95,9,3024.65,2419.72,604.93,3.58,4,90-99,Q4 (Highest),0.47,0.2,0.21,30,147,3.17
+1071,66.0,Other,Belfast,Retired,Provider A,Hypertension,Undergraduate,Married,43642.48,21,10,General Practice,67.71,5,3147.97,2518.38,629.59,2.9,8,60-69,Q2,0.24,0.2,0.38,17,157,3.5
+1072,26.0,Female,Birmingham,Engineer,Provider D,Hypertension,Undergraduate,Divorced,46234.4,25,12,Rheumatology,74.76,3,4310.37,4310.37,0.0,3.0,10,20-29,Q4 (Highest),0.12,0.0,0.4,6,174,4.17
+1073,47.0,Other,London,Businessperson,Uninsured,Cancer,Undergraduate,Married,46989.8,15,10,General Practice,58.4,1,2166.91,0.0,2166.91,3.2,5,40-49,Q4 (Highest),0.07,1.0,0.33,7,174,2.5
+1074,4.0,Other,Edinburgh,Student,Provider B,None,Pre-school,Single,0.0,29,12,General Practice,67.76,8,4351.97,3916.78,435.2,2.76,12,0-9,Q1 (Lowest),0.28,0.1,0.41,1,181,4.83
+1075,51.0,Other,Belfast,Nurse,Provider A,Cancer,Undergraduate,Divorced,45976.86,18,9,Psychiatry,80.56,3,3256.96,2605.57,651.39,2.94,7,50-59,Q4 (Highest),0.17,0.2,0.39,10,166,3.0
+1076,59.0,Other,Liverpool,Nurse,Uninsured,Heart Disease,Master,Divorced,42345.15,20,8,Emergency,58.9,6,4056.23,0.0,4056.23,2.95,8,50-59,Q2,0.3,1.0,0.4,8,173,3.33
+1077,69.0,Female,Belfast,Retired,Provider C,None,Master,Divorced,48970.33,21,9,General Practice,72.55,5,3071.84,2150.28,921.55,3.67,6,60-69,Q4 (Highest),0.24,0.3,0.29,1,180,3.5
+1078,62.0,Other,Edinburgh,Doctor,Uninsured,Diabetes,Master,Divorced,46939.5,24,12,Pulmonology,63.75,12,4224.63,0.0,4224.63,3.08,8,60-69,Q4 (Highest),0.5,1.0,0.33,8,166,4.0
+1079,27.0,Female,Glasgow,Lawyer,Provider C,Hypertension,Master,Single,45506.67,18,10,Psychiatry,66.06,6,2706.56,1894.59,811.97,3.06,7,20-29,Q3,0.33,0.3,0.39,4,175,3.0
+1080,29.0,Other,Liverpool,Artist,Provider B,Hypertension,Master,Divorced,46696.53,19,10,Pulmonology,69.47,5,3095.98,2786.38,309.6,3.32,7,20-29,Q4 (Highest),0.26,0.1,0.37,7,174,3.17
+1081,14.0,Female,Birmingham,Student,Provider B,Hypertension,High school,Single,0.0,18,10,Psychiatry,67.44,8,2731.43,2458.29,273.14,3.11,7,10-19,Q1 (Lowest),0.44,0.1,0.39,21,153,3.0
+1082,3.0,Male,Birmingham,Student,Provider C,Heart Disease,Pre-school,Single,0.0,17,10,Dermatology,78.12,2,2828.96,1980.27,848.69,3.47,5,0-9,Q1 (Lowest),0.12,0.3,0.29,7,174,2.83
+1083,10.0,Male,London,Student,Provider A,Hypertension,Elementary school,Single,0.0,27,11,Rheumatology,62.52,6,4741.13,3792.91,948.23,2.81,15,10-19,Q1 (Lowest),0.22,0.2,0.56,17,161,4.5
+1084,98.0,Male,Liverpool,Retired,Provider A,None,Master,Married,42417.69,13,10,Cardiology,51.85,4,2309.94,1847.95,461.99,2.77,7,90-99,Q2,0.31,0.2,0.54,2,167,2.17
+1085,46.0,Other,Liverpool,Lawyer,Provider B,Hypertension,Undergraduate,Divorced,45999.44,16,10,Allergology,75.25,2,3053.24,2747.92,305.32,3.06,7,40-49,Q4 (Highest),0.12,0.1,0.44,17,161,2.67
+1086,95.0,Other,Birmingham,Retired,Provider A,Diabetes,Undergraduate,Divorced,45421.44,25,12,Gastroenterology,65.92,4,4386.93,3509.54,877.39,3.12,10,90-99,Q3,0.16,0.2,0.4,10,162,4.17
+1087,31.0,Female,Edinburgh,Businessperson,Provider D,Heart Disease,PhD,Divorced,52484.86,22,10,Psychiatry,60.09,4,3745.06,3745.06,0.0,2.68,11,30-39,Q4 (Highest),0.18,0.0,0.5,10,171,3.67
+1088,35.0,Female,Birmingham,Scientist,Provider B,Cancer,PhD,Single,54400.87,15,8,Psychiatry,62.33,2,2206.28,1985.65,220.63,3.33,4,30-39,Q4 (Highest),0.13,0.1,0.27,16,164,2.5
+1089,17.0,Male,Belfast,Student,Provider C,Cancer,High school,Single,0.0,13,9,Dermatology,70.77,2,2687.55,1881.28,806.26,3.46,3,10-19,Q1 (Lowest),0.15,0.3,0.23,31,149,2.17
+1090,92.0,Male,Dublin,Retired,Uninsured,Diabetes,Undergraduate,Divorced,47042.76,21,10,General Practice,78.62,4,2803.39,0.0,2803.39,2.86,10,90-99,Q4 (Highest),0.19,1.0,0.48,10,158,3.5
+1091,89.0,Male,Manchester,Retired,Provider B,None,Master,Widowed,46338.92,12,7,Emergency,63.17,0,2179.65,1961.68,217.96,3.5,5,80-89,Q4 (Highest),0.0,0.1,0.42,5,168,2.0
+1092,37.0,Other,London,Engineer,Provider C,Heart Disease,Undergraduate,Divorced,45042.89,19,10,Psychiatry,57.16,8,2977.61,2084.33,893.28,3.21,8,30-39,Q3,0.42,0.3,0.42,28,148,3.17
+1093,41.0,Other,London,Scientist,Uninsured,Diabetes,Master,Married,47696.64,14,10,ENT,77.07,2,2003.46,0.0,2003.46,3.43,5,40-49,Q4 (Highest),0.14,1.0,0.36,5,175,2.33
+1094,86.0,Female,Glasgow,Retired,Provider A,Diabetes,Undergraduate,Widowed,47276.96,23,12,General Practice,59.17,4,3692.86,2954.29,738.57,3.57,7,80-89,Q4 (Highest),0.17,0.2,0.3,1,158,3.83
+1095,20.0,Male,Manchester,Artist,Uninsured,Diabetes,Undergraduate,Married,44648.35,23,11,Endocrinology,82.78,9,4167.96,0.0,4167.96,3.13,9,20-29,Q3,0.39,1.0,0.39,8,168,3.83
+1096,23.0,Female,London,Teacher,Provider C,Heart Disease,Master,Married,44307.58,12,7,General Practice,63.5,3,2127.39,1489.17,638.22,2.83,6,20-29,Q3,0.25,0.3,0.5,17,159,2.0
+1097,52.0,Female,London,Scientist,Provider B,None,Master,Married,45225.86,14,7,Neurology,64.86,3,2352.23,2117.01,235.22,3.71,1,50-59,Q3,0.21,0.1,0.07,5,151,2.33
+1098,100.0,Female,Birmingham,Retired,Provider C,None,Master,Widowed,47305.17,18,8,Orthopedics,76.0,3,3094.53,2166.17,928.36,2.94,5,,Q4 (Highest),0.17,0.3,0.28,3,162,3.0
+1099,97.0,Male,Glasgow,Retired,Provider A,Heart Disease,Undergraduate,Widowed,47136.17,23,13,General Practice,72.3,5,3588.99,2871.19,717.8,3.96,2,90-99,Q4 (Highest),0.22,0.2,0.09,7,166,3.83
+1100,39.0,Other,London,Doctor,Provider C,Diabetes,Undergraduate,Married,46823.0,16,10,General Practice,77.38,2,2227.0,1558.9,668.1,3.12,5,30-39,Q4 (Highest),0.12,0.3,0.31,19,163,2.67
+1101,54.0,Other,Belfast,Scientist,Provider B,Diabetes,Master,Divorced,47432.25,18,11,Psychiatry,76.61,4,2673.08,2405.77,267.31,3.0,8,50-59,Q4 (Highest),0.22,0.1,0.44,5,177,3.0
+1102,77.0,Other,Glasgow,Retired,Provider D,Hypertension,Undergraduate,Divorced,47839.05,19,10,Orthopedics,62.32,3,3344.24,3344.24,0.0,2.79,8,70-79,Q4 (Highest),0.16,0.0,0.42,14,163,3.17
+1103,65.0,Other,London,Retired,Provider B,Cancer,Master,Widowed,45554.71,21,10,Emergency,62.76,5,3578.1,3220.29,357.81,3.05,9,60-69,Q3,0.24,0.1,0.43,16,149,3.5
+1104,90.0,Female,Manchester,Retired,Provider B,Heart Disease,Master,Married,42723.5,16,10,General Practice,70.12,3,2490.23,2241.2,249.02,3.25,7,90-99,Q2,0.19,0.1,0.44,2,165,2.67
+1105,36.0,Male,Manchester,Businessperson,Provider D,Cancer,Undergraduate,Married,46642.27,15,10,General Practice,76.73,6,2400.35,2400.35,0.0,3.2,5,30-39,Q4 (Highest),0.4,0.0,0.33,8,159,2.5
+1106,26.0,Other,Edinburgh,Lawyer,Provider B,Hypertension,Undergraduate,Divorced,45842.74,19,9,Pulmonology,64.84,2,3699.36,3329.42,369.94,3.11,8,20-29,Q3,0.11,0.1,0.42,24,158,3.17
+1107,97.0,Female,Dublin,Retired,Uninsured,Heart Disease,Undergraduate,Married,42370.93,21,9,Psychiatry,59.05,4,3633.19,0.0,3633.19,3.1,8,90-99,Q2,0.19,1.0,0.38,9,173,3.5
+1108,57.0,Male,Dublin,Lawyer,Provider A,Diabetes,Undergraduate,Married,41313.46,24,10,Psychiatry,67.38,7,4425.94,3540.75,885.19,3.21,9,50-59,Q1 (Lowest),0.29,0.2,0.38,18,151,4.0
+1109,2.0,Other,Belfast,Student,Provider D,None,Pre-school,Single,0.0,20,10,Orthopedics,62.45,6,3122.52,2868.81,253.7,3.05,7,0-9,Q1 (Lowest),0.3,0.08,0.35,9,170,3.33
+1110,66.0,Female,Glasgow,Retired,Provider B,None,Undergraduate,Married,44804.12,21,11,Psychiatry,83.57,7,3543.86,3187.75,356.11,3.1,8,60-69,Q3,0.33,0.1,0.38,3,173,3.5
+1111,73.0,Male,Liverpool,Retired,Provider C,None,Master,Married,43032.05,22,11,Pulmonology,72.36,8,3554.98,2488.49,1066.49,2.95,10,70-79,Q2,0.36,0.3,0.45,7,168,3.67
+1112,94.0,Female,Edinburgh,Retired,Provider D,Diabetes,Master,Divorced,43911.91,23,10,Orthopedics,82.43,5,4366.21,4366.21,0.0,3.39,6,90-99,Q2,0.22,0.0,0.26,15,167,3.83
+1113,80.0,Male,Edinburgh,Retired,Provider D,Diabetes,Master,Divorced,47396.16,25,12,General Practice,64.12,6,3829.39,3829.39,0.0,3.0,10,80-89,Q4 (Highest),0.24,0.0,0.4,6,167,4.17
+1114,46.0,Other,Belfast,Engineer,Provider A,None,Undergraduate,Married,47159.55,22,10,Endocrinology,65.05,5,3953.21,3162.57,790.64,2.91,10,40-49,Q4 (Highest),0.23,0.2,0.45,1,178,3.67
+1115,11.0,Male,London,Student,Provider C,Hypertension,Middle school/junior high,Single,0.0,15,10,General Practice,80.87,3,2246.93,1572.85,674.08,3.07,6,10-19,Q1 (Lowest),0.2,0.3,0.4,4,171,2.5
+1116,87.0,Male,Glasgow,Retired,Provider B,Heart Disease,Master,Married,45522.1,20,10,Emergency,73.05,11,3619.26,3257.33,361.93,2.95,7,80-89,Q3,0.55,0.1,0.35,1,176,3.33
+1117,79.0,Male,Belfast,Retired,Uninsured,Hypertension,Undergraduate,Divorced,45443.1,20,10,Psychiatry,63.15,5,3609.5,0.0,3609.5,3.05,9,70-79,Q3,0.25,1.0,0.45,8,164,3.33
+1118,52.0,Other,Birmingham,Engineer,Provider B,Cancer,Undergraduate,Married,45215.27,22,10,Endocrinology,63.41,3,3658.17,3292.35,365.82,3.18,8,50-59,Q3,0.14,0.1,0.36,2,150,3.67
+1119,10.0,Male,Liverpool,Student,Provider D,Heart Disease,Elementary school,Single,0.0,12,6,General Practice,69.42,1,1839.11,1839.11,0.0,3.58,3,10-19,Q1 (Lowest),0.08,0.0,0.25,13,153,2.0
+1120,9.0,Male,Dublin,Student,Provider B,None,Elementary school,Single,0.0,17,8,Psychiatry,70.82,6,3284.3,2955.87,328.43,3.12,5,0-9,Q1 (Lowest),0.35,0.1,0.29,9,172,2.83
+1121,52.0,Female,Glasgow,Engineer,Provider B,Hypertension,Master,Married,43286.55,20,11,Endocrinology,69.2,6,3799.35,3419.41,379.93,2.9,9,50-59,Q2,0.3,0.1,0.45,1,176,3.33
+1122,2.0,Other,Birmingham,Student,Uninsured,None,Pre-school,Single,0.0,18,10,Emergency,60.5,6,3380.9,0.0,3380.9,2.94,9,0-9,Q1 (Lowest),0.33,1.0,0.5,5,155,3.0
+1123,18.0,Female,Birmingham,Student,Uninsured,Heart Disease,High school,Single,0.0,19,10,Psychiatry,70.68,10,3106.73,0.0,3106.73,3.05,9,10-19,Q1 (Lowest),0.53,1.0,0.47,8,173,3.17
+1124,95.0,Other,Birmingham,Retired,Uninsured,Diabetes,Master,Divorced,43144.94,26,10,General Practice,63.54,12,4166.83,0.0,4166.83,3.04,11,90-99,Q2,0.46,1.0,0.42,3,165,4.33
+1125,65.0,Female,Glasgow,Retired,Provider C,Hypertension,Undergraduate,Divorced,44627.0,13,7,Cardiology,65.23,4,2165.82,1516.07,649.75,3.0,5,60-69,Q3,0.31,0.3,0.38,1,178,2.17
+1126,3.0,Male,Liverpool,Student,Provider D,Cancer,Pre-school,Single,0.0,18,12,Endocrinology,63.72,8,2719.49,2719.49,0.0,3.72,4,0-9,Q1 (Lowest),0.44,0.0,0.22,9,160,3.0
+1127,74.0,Other,Liverpool,Retired,Provider D,Hypertension,Master,Married,44652.26,19,10,Allergology,63.0,3,3513.8,3513.8,0.0,3.47,3,70-79,Q3,0.16,0.0,0.16,4,175,3.17
+1128,91.0,Other,Belfast,Retired,Uninsured,Heart Disease,Undergraduate,Divorced,47661.5,16,11,Dermatology,67.69,5,2622.44,0.0,2622.44,3.44,5,90-99,Q4 (Highest),0.31,1.0,0.31,20,157,2.67
+1129,74.0,Other,London,Retired,Provider A,Heart Disease,Undergraduate,Widowed,45523.14,14,7,Dermatology,74.43,3,1999.32,1599.46,399.86,3.14,7,70-79,Q3,0.21,0.2,0.5,9,169,2.33
+1130,65.0,Male,Belfast,Retired,Provider B,None,Master,Married,43938.1,20,13,Psychiatry,69.9,3,3319.24,2987.32,331.92,3.3,7,60-69,Q2,0.15,0.1,0.35,3,172,3.33
+1131,95.0,Other,Liverpool,Retired,Provider B,Heart Disease,Master,Divorced,45132.0,25,13,General Practice,69.16,5,4204.99,3784.49,420.5,2.8,11,90-99,Q3,0.2,0.1,0.44,5,166,4.17
+1132,83.0,Other,Glasgow,Retired,Provider D,Heart Disease,Master,Divorced,43339.37,19,11,Gastroenterology,65.74,8,2793.47,2793.47,0.0,2.95,7,80-89,Q2,0.42,0.0,0.37,2,174,3.17
+1133,74.0,Male,Birmingham,Retired,Provider D,None,Master,Widowed,46493.26,23,8,General Practice,70.74,7,3546.6,3546.6,0.0,3.57,5,70-79,Q4 (Highest),0.3,0.0,0.22,12,165,3.83
+1134,68.0,Female,Glasgow,Retired,Provider D,Diabetes,Master,Married,44199.59,17,8,Psychiatry,76.71,6,2747.25,2747.25,0.0,3.47,4,60-69,Q3,0.35,0.0,0.24,4,178,2.83
+1135,59.0,Male,Birmingham,Doctor,Provider D,Diabetes,Undergraduate,Widowed,46287.06,17,9,Psychiatry,62.41,3,2652.52,2652.52,0.0,3.88,3,50-59,Q4 (Highest),0.18,0.0,0.18,8,171,2.83
+1136,59.0,Male,Belfast,Scientist,Provider B,Cancer,Undergraduate,Divorced,42468.57,14,8,Pulmonology,59.57,4,2775.49,2497.94,277.55,3.07,4,50-59,Q2,0.29,0.1,0.29,2,175,2.33
+1137,66.0,Male,Belfast,Retired,Provider A,Heart Disease,Master,Married,45263.24,25,11,Cardiology,73.28,4,4545.09,3636.07,909.02,3.4,8,60-69,Q3,0.16,0.2,0.32,18,160,4.17
+1138,51.0,Other,Glasgow,Engineer,Provider A,None,Master,Widowed,43733.21,14,8,Cardiology,75.79,3,2729.47,2183.57,545.89,2.43,8,50-59,Q2,0.21,0.2,0.57,8,151,2.33
+1139,35.0,Male,Manchester,Engineer,Provider C,Heart Disease,Undergraduate,Single,47510.42,19,9,Emergency,78.32,6,3787.94,2651.56,1136.38,3.68,3,30-39,Q4 (Highest),0.32,0.3,0.16,5,144,3.17
+1140,11.0,Other,Edinburgh,Student,Provider C,Heart Disease,Middle school/junior high,Single,0.0,19,11,Psychiatry,60.68,5,3414.27,2389.99,1024.28,3.0,7,10-19,Q1 (Lowest),0.26,0.3,0.37,2,171,3.17
+1141,48.0,Male,Edinburgh,Lawyer,Provider D,Heart Disease,Undergraduate,Married,43388.5,20,12,General Practice,53.65,4,2527.27,2527.27,0.0,3.35,7,40-49,Q2,0.2,0.0,0.35,5,172,3.33
+1142,30.0,Other,London,Scientist,Uninsured,Cancer,Master,Single,46321.8,22,10,Cardiology,64.77,8,3872.21,0.0,3872.21,3.09,8,30-39,Q4 (Highest),0.36,1.0,0.36,19,160,3.67
+1143,60.0,Other,Belfast,Engineer,Provider A,Cancer,Master,Widowed,41792.78,18,9,Dermatology,72.06,3,2876.25,2301.0,575.25,2.78,9,60-69,Q2,0.17,0.2,0.5,15,167,3.0
+1144,89.0,Other,Belfast,Retired,Provider C,Diabetes,Undergraduate,Married,43123.65,20,10,Cardiology,68.35,7,3805.09,2663.57,1141.53,3.0,9,80-89,Q2,0.35,0.3,0.45,2,174,3.33
+1145,64.0,Male,London,Nurse,Uninsured,None,Undergraduate,Divorced,45918.52,23,12,ENT,65.0,9,3774.4,0.0,3774.4,2.91,11,60-69,Q4 (Highest),0.39,1.0,0.48,15,164,3.83
+1146,92.0,Female,Edinburgh,Retired,Provider B,Cancer,Undergraduate,Divorced,43651.58,24,10,Psychiatry,60.83,7,3595.58,3236.02,359.56,3.33,8,90-99,Q2,0.29,0.1,0.33,22,154,4.0
+1147,28.0,Female,Birmingham,Nurse,Provider C,Heart Disease,Undergraduate,Married,50656.5,14,7,Gastroenterology,76.07,4,2556.02,1789.21,766.8,2.57,8,20-29,Q4 (Highest),0.29,0.3,0.57,1,174,2.33
+1148,69.0,Other,Glasgow,Retired,Uninsured,Hypertension,Undergraduate,Divorced,46573.92,24,12,General Practice,65.62,4,4066.17,0.0,4066.17,3.25,8,60-69,Q4 (Highest),0.17,1.0,0.33,13,156,4.0
+1149,4.0,Male,London,Student,Uninsured,Heart Disease,Pre-school,Single,0.0,16,9,Psychiatry,74.12,2,2195.17,0.0,2195.17,3.0,8,0-9,Q1 (Lowest),0.12,1.0,0.5,10,165,2.67
+1150,12.0,Other,Liverpool,Student,Provider A,None,Middle school/junior high,Single,0.0,21,9,ENT,71.81,4,3384.48,2707.58,676.9,3.05,8,10-19,Q1 (Lowest),0.19,0.2,0.38,31,142,3.5
+1151,47.0,Other,Liverpool,Nurse,Uninsured,None,Master,Married,42761.86,21,9,Pulmonology,69.05,8,3479.0,0.0,3479.0,3.24,7,40-49,Q2,0.38,1.0,0.33,22,148,3.5
+1152,67.0,Female,London,Retired,Provider A,Diabetes,Master,Divorced,43686.32,22,10,Orthopedics,60.55,3,3574.75,2859.8,714.95,2.82,11,60-69,Q2,0.14,0.2,0.5,2,179,3.67
+1153,28.0,Female,Dublin,Scientist,Provider C,Diabetes,Undergraduate,Divorced,47863.38,16,9,Orthopedics,68.69,4,2826.57,1978.6,847.97,2.25,10,20-29,Q4 (Highest),0.25,0.3,0.62,3,166,2.67
+1154,48.0,Other,London,Engineer,Provider C,Hypertension,Master,Married,46047.85,13,8,Dermatology,72.15,3,2059.93,1441.95,617.98,2.92,7,40-49,Q4 (Highest),0.23,0.3,0.54,53,120,2.17
+1155,68.0,Male,Manchester,Retired,Provider A,Cancer,Master,Divorced,42012.71,26,11,Psychiatry,68.35,10,3970.17,3176.14,794.03,3.58,4,60-69,Q2,0.38,0.2,0.15,5,166,4.33
+1156,70.0,Male,Edinburgh,Retired,Provider D,Heart Disease,Undergraduate,Married,42057.48,25,9,Psychiatry,60.72,2,4294.95,4294.95,0.0,3.04,9,70-79,Q2,0.08,0.0,0.36,12,154,4.17
+1157,35.0,Other,Birmingham,Lawyer,Provider B,None,PhD,Divorced,52296.03,31,9,Neurology,66.39,8,5114.82,4570.67,544.15,3.39,7,30-39,Q4 (Highest),0.26,0.11,0.23,3,178,5.17
+1158,7.0,Male,London,Student,Provider B,Hypertension,Elementary school,Single,0.0,22,13,Orthopedics,71.45,4,4012.2,3610.98,401.22,3.5,6,0-9,Q1 (Lowest),0.18,0.1,0.27,8,157,3.67
+1159,58.0,Male,Glasgow,Lawyer,Provider D,None,Undergraduate,Married,41702.95,19,13,ENT,63.89,8,3132.6,3132.6,0.0,2.95,7,50-59,Q2,0.42,0.0,0.37,10,164,3.17
+1160,46.0,Other,Liverpool,Nurse,Provider B,Diabetes,Master,Divorced,43769.0,18,10,Orthopedics,62.06,4,2929.68,2636.71,292.97,3.78,3,40-49,Q2,0.22,0.1,0.17,13,162,3.0
+1161,88.0,Other,Birmingham,Retired,Uninsured,Diabetes,Undergraduate,Divorced,42617.19,13,9,Rheumatology,61.92,6,2227.27,0.0,2227.27,2.92,6,80-89,Q2,0.46,1.0,0.46,20,145,2.17
+1162,17.0,Other,Glasgow,Student,Provider C,Heart Disease,High school,Single,0.0,20,11,General Practice,83.4,6,3432.82,2402.97,1029.85,3.5,5,10-19,Q1 (Lowest),0.3,0.3,0.25,1,181,3.33
+1163,12.0,Male,London,Student,Provider A,Hypertension,Middle school/junior high,Single,0.0,16,7,Cardiology,63.0,3,2993.64,2394.92,598.73,2.75,8,10-19,Q1 (Lowest),0.19,0.2,0.5,1,178,2.67
+1164,63.0,Male,London,Nurse,Provider D,Hypertension,Master,Married,43919.36,25,11,Psychiatry,69.28,5,4100.98,4100.98,0.0,2.96,9,60-69,Q2,0.2,0.0,0.36,1,179,4.17
+1165,13.0,Female,London,Student,Provider D,None,Middle school/junior high,Single,0.0,25,11,Allergology,59.28,12,3564.47,3564.47,0.0,3.4,7,10-19,Q1 (Lowest),0.48,0.0,0.28,3,176,4.17
+1166,90.0,Female,London,Retired,Provider B,Hypertension,Master,Married,43821.38,16,11,General Practice,65.25,4,2165.52,1948.96,216.55,3.56,5,90-99,Q2,0.25,0.1,0.31,24,150,2.67
+1167,58.0,Other,Glasgow,Scientist,Provider A,Cancer,Master,Divorced,44874.2,20,11,Gastroenterology,69.55,3,3077.1,2461.68,615.42,3.2,6,50-59,Q3,0.15,0.2,0.3,7,171,3.33
+1168,68.0,Other,Belfast,Retired,Provider B,Diabetes,Undergraduate,Married,43362.62,21,8,General Practice,76.71,7,3175.7,2858.13,317.57,3.14,8,60-69,Q2,0.33,0.1,0.38,6,165,3.5
+1169,18.0,Male,Belfast,Student,Provider D,None,High school,Single,0.0,26,10,General Practice,68.5,8,4061.98,3927.06,134.92,3.15,9,10-19,Q1 (Lowest),0.31,0.03,0.35,9,172,4.33
+1170,19.0,Other,Manchester,Artist,Provider C,None,Undergraduate,Married,49113.6,20,9,Rheumatology,72.5,3,2945.58,2061.91,883.67,3.25,10,10-19,Q4 (Highest),0.15,0.3,0.5,27,155,3.33
+1171,56.0,Other,Manchester,Businessperson,Provider B,None,Undergraduate,Married,45464.26,19,10,Neurology,53.05,8,3233.19,2737.83,495.36,2.42,11,50-59,Q3,0.42,0.15,0.58,6,169,3.17
+1172,27.0,Male,Liverpool,Scientist,Provider B,Hypertension,Master,Single,42214.17,12,8,Psychiatry,71.5,3,1934.08,1740.67,193.41,2.5,8,20-29,Q2,0.25,0.1,0.67,12,165,2.0
+1173,6.0,Male,Dublin,Student,Provider B,Hypertension,Kindergarten,Single,0.0,10,8,Cardiology,68.3,2,1758.41,1582.57,175.84,2.8,4,0-9,Q1 (Lowest),0.2,0.1,0.4,9,166,1.67
+1174,72.0,Female,Belfast,Retired,Uninsured,Diabetes,Undergraduate,Widowed,45867.69,16,9,Rheumatology,61.75,4,2828.16,0.0,2828.16,3.12,4,70-79,Q3,0.25,1.0,0.25,3,152,2.67
+1175,82.0,Other,Glasgow,Retired,Provider A,Heart Disease,Undergraduate,Widowed,43151.02,22,10,Psychiatry,78.36,8,3845.08,2984.62,860.46,2.64,13,80-89,Q2,0.36,0.22,0.59,9,173,3.67
+1176,34.0,Female,Belfast,Engineer,Provider C,Cancer,Undergraduate,Divorced,46603.47,19,10,General Practice,57.58,5,3145.0,2201.5,943.5,3.47,7,30-39,Q4 (Highest),0.26,0.3,0.37,8,169,3.17
+1177,76.0,Female,Birmingham,Retired,Uninsured,Diabetes,Undergraduate,Divorced,47530.03,15,11,Allergology,56.93,5,2522.64,0.0,2522.64,3.13,6,70-79,Q4 (Highest),0.33,1.0,0.4,2,178,2.5
+1178,66.0,Male,Belfast,Retired,Provider A,Heart Disease,Undergraduate,Divorced,48489.53,15,10,General Practice,71.87,3,2108.29,1686.63,421.66,2.93,5,60-69,Q4 (Highest),0.2,0.2,0.33,7,175,2.5
+1179,30.0,Other,London,Teacher,Uninsured,Hypertension,Master,Married,43547.48,25,9,Emergency,79.2,10,4440.38,0.0,4440.38,3.52,8,30-39,Q2,0.4,1.0,0.32,3,174,4.17
+1180,51.0,Other,Glasgow,Retired,Provider B,Diabetes,Master,Divorced,46323.31,16,9,General Practice,65.5,7,2579.99,2321.99,258.0,2.88,9,50-59,Q4 (Highest),0.44,0.1,0.56,9,171,2.67
+1181,1.0,Female,London,Student,Provider C,Hypertension,Pre-school,Single,0.0,25,11,Allergology,61.72,5,4177.67,2924.37,1253.3,3.28,9,0-9,Q1 (Lowest),0.2,0.3,0.36,5,174,4.17
+1182,59.0,Male,Birmingham,Lawyer,Provider D,Hypertension,Master,Widowed,45820.6,25,12,Psychiatry,71.6,7,3727.41,3727.41,0.0,3.08,10,50-59,Q3,0.28,0.0,0.4,4,175,4.17
+1183,16.0,Male,Dublin,Student,Provider D,None,High school,Single,0.0,22,9,Psychiatry,61.05,10,3032.69,3032.69,0.0,3.27,8,10-19,Q1 (Lowest),0.45,0.0,0.36,5,174,3.67
+1184,27.0,Male,Dublin,Nurse,Provider B,Diabetes,Master,Divorced,46676.46,13,9,Allergology,68.31,4,2182.55,1964.29,218.25,2.15,8,20-29,Q4 (Highest),0.31,0.1,0.62,25,141,2.17
+1185,17.0,Female,Glasgow,Student,Provider B,Hypertension,High school,Single,0.0,16,9,Psychiatry,64.81,4,2404.48,2164.03,240.45,3.12,6,10-19,Q1 (Lowest),0.25,0.1,0.38,4,168,2.67
+1186,55.0,Other,Glasgow,Nurse,Provider B,Hypertension,Master,Divorced,45722.86,21,9,Psychiatry,70.9,5,3311.29,2980.16,331.13,3.67,5,50-59,Q3,0.24,0.1,0.24,3,176,3.5
+1187,20.0,Male,London,Lawyer,Provider B,Cancer,Undergraduate,Single,46985.62,21,12,Allergology,61.05,6,3470.06,3123.05,347.01,3.14,7,20-29,Q4 (Highest),0.29,0.1,0.33,3,174,3.5
+1188,32.0,Female,Edinburgh,Businessperson,Provider C,None,Master,Married,44830.5,14,9,Gastroenterology,77.07,5,2289.35,1602.55,686.81,2.64,8,30-39,Q3,0.36,0.3,0.57,1,171,2.33
+1189,12.0,Other,Birmingham,Student,Provider B,Diabetes,Middle school/junior high,Single,0.0,20,10,Emergency,76.45,6,3428.35,3085.51,342.83,2.55,11,10-19,Q1 (Lowest),0.3,0.1,0.55,1,181,3.33
+1190,65.0,Other,Manchester,Retired,Provider B,Heart Disease,Undergraduate,Married,47308.67,15,8,Emergency,69.87,4,2935.94,2642.35,293.59,3.4,5,60-69,Q4 (Highest),0.27,0.1,0.33,6,175,2.5
+1191,27.0,Other,Dublin,Scientist,Provider B,None,Master,Married,45390.4,15,9,Cardiology,73.27,3,2755.97,2473.43,282.54,3.67,4,20-29,Q3,0.2,0.1,0.27,8,163,2.5
+1192,77.0,Male,Glasgow,Retired,Uninsured,Cancer,Undergraduate,Widowed,40161.65,23,10,General Practice,65.74,13,3945.09,0.0,3945.09,3.35,6,70-79,Q1 (Lowest),0.57,1.0,0.26,1,180,3.83
+1193,27.0,Female,Edinburgh,Businessperson,Provider C,Cancer,Undergraduate,Married,43034.88,25,13,Gastroenterology,60.44,10,4731.39,3311.97,1419.42,2.92,12,20-29,Q2,0.4,0.3,0.48,5,172,4.17
+1194,30.0,Other,Belfast,Artist,Provider B,Heart Disease,Undergraduate,Married,46580.19,16,9,Psychiatry,57.88,0,2108.21,1897.39,210.82,3.56,4,30-39,Q4 (Highest),0.0,0.1,0.25,25,154,2.67
+1195,38.0,Other,Birmingham,Scientist,Provider D,None,Master,Divorced,41126.02,23,10,Psychiatry,69.87,8,4117.25,4117.25,0.0,2.78,10,30-39,Q1 (Lowest),0.35,0.0,0.43,9,146,3.83
+1196,80.0,Male,Liverpool,Retired,Provider B,Diabetes,Undergraduate,Divorced,44170.14,14,7,General Practice,67.43,4,1874.85,1687.36,187.48,3.64,4,80-89,Q3,0.29,0.1,0.29,50,132,2.33
+1197,12.0,Male,Glasgow,Student,Provider D,Heart Disease,Middle school/junior high,Single,0.0,18,10,General Practice,62.5,1,3235.78,3235.78,0.0,3.11,9,10-19,Q1 (Lowest),0.06,0.0,0.5,3,177,3.0
+1198,38.0,Other,Birmingham,Engineer,Provider A,Heart Disease,Undergraduate,Divorced,43778.18,22,9,Psychiatry,70.91,7,4306.69,3445.35,861.34,2.68,11,30-39,Q2,0.32,0.2,0.5,14,157,3.67
+1199,10.0,Female,Glasgow,Student,Uninsured,Heart Disease,Elementary school,Single,0.0,23,10,Psychiatry,54.35,5,3114.96,0.0,3114.96,3.61,6,10-19,Q1 (Lowest),0.22,1.0,0.26,7,156,3.83
+1200,49.0,Other,London,Artist,Uninsured,Cancer,Master,Widowed,47356.25,16,10,Cardiology,49.12,3,3100.2,0.0,3100.2,2.94,5,40-49,Q4 (Highest),0.19,1.0,0.31,11,169,2.67
+1201,59.0,Other,Glasgow,Businessperson,Provider C,Cancer,Undergraduate,Divorced,45622.86,22,11,Cardiology,77.23,7,3704.36,2593.05,1111.31,3.0,10,50-59,Q3,0.32,0.3,0.45,17,142,3.67
+1202,32.0,Female,London,Lawyer,Provider A,Diabetes,Master,Divorced,46624.95,20,8,General Practice,50.5,5,2797.01,2237.6,559.4,3.35,4,30-39,Q4 (Highest),0.25,0.2,0.2,21,155,3.33
+1203,59.0,Male,Liverpool,Scientist,Provider A,Hypertension,Undergraduate,Widowed,44074.91,22,12,Psychiatry,72.45,3,4065.07,3252.05,813.01,2.59,10,50-59,Q2,0.14,0.2,0.45,4,177,3.67
+1204,46.0,Female,Dublin,Lawyer,Provider D,Cancer,Undergraduate,Married,44673.56,16,7,Gastroenterology,68.38,3,2282.46,2282.46,0.0,3.06,6,40-49,Q3,0.19,0.0,0.38,7,160,2.67
+1205,76.0,Male,Birmingham,Retired,Provider B,Hypertension,Master,Widowed,47569.05,22,10,Psychiatry,70.0,6,3669.02,3302.12,366.9,2.77,11,70-79,Q4 (Highest),0.27,0.1,0.5,34,147,3.67
+1206,79.0,Female,Belfast,Retired,Provider C,Hypertension,Undergraduate,Divorced,46241.86,18,9,Rheumatology,66.0,7,2670.52,1869.36,801.15,3.39,6,70-79,Q4 (Highest),0.39,0.3,0.33,7,174,3.0
+1207,51.0,Other,Liverpool,Student,Provider D,Hypertension,High school,Single,0.0,27,13,General Practice,66.11,8,3935.04,3935.04,0.0,3.37,7,50-59,Q1 (Lowest),0.3,0.0,0.26,15,167,4.5
+1208,89.0,Male,Glasgow,Retired,Uninsured,Hypertension,Undergraduate,Widowed,46876.05,19,9,Orthopedics,69.26,5,2811.98,0.0,2811.98,4.05,4,80-89,Q4 (Highest),0.26,1.0,0.21,10,160,3.17
+1209,5.0,Male,Dublin,Student,Provider A,Hypertension,Kindergarten,Single,0.0,21,9,Emergency,64.81,8,3655.95,2924.76,731.19,3.14,7,0-9,Q1 (Lowest),0.38,0.2,0.33,8,161,3.5
+1210,97.0,Male,Edinburgh,Retired,Provider D,Heart Disease,Undergraduate,Married,41931.18,25,10,Pulmonology,66.32,2,3282.36,3282.36,0.0,3.0,11,90-99,Q2,0.08,0.0,0.44,12,167,4.17
+1211,68.0,Male,Edinburgh,Retired,Provider A,Diabetes,Undergraduate,Divorced,42707.36,14,10,Pulmonology,67.36,4,2336.8,1879.5,457.3,2.57,7,60-69,Q2,0.29,0.2,0.5,7,159,2.33
+1212,33.0,Other,London,Scientist,Uninsured,Heart Disease,Undergraduate,Divorced,42820.17,29,10,General Practice,66.03,6,3954.45,0.0,3954.45,2.93,11,30-39,Q2,0.21,1.0,0.38,2,179,4.83
+1213,29.0,Male,Manchester,Lawyer,Provider B,Heart Disease,Undergraduate,Married,45275.56,27,10,General Practice,70.37,9,4049.1,3644.19,404.91,3.59,6,20-29,Q3,0.33,0.1,0.22,6,176,4.5
+1214,55.0,Male,Glasgow,Engineer,Uninsured,Cancer,Master,Widowed,46533.85,20,7,General Practice,72.0,2,2587.89,0.0,2587.89,3.65,5,50-59,Q4 (Highest),0.1,1.0,0.25,4,177,3.33
+1215,66.0,Male,Dublin,Retired,Provider D,Cancer,Undergraduate,Widowed,43929.27,15,11,Emergency,70.33,7,2996.73,2996.73,0.0,3.33,3,60-69,Q2,0.47,0.0,0.2,8,122,2.5
+1216,94.0,Male,Birmingham,Retired,Provider C,Cancer,Undergraduate,Married,44680.88,17,10,General Practice,72.65,5,2336.32,1635.43,700.9,3.29,5,90-99,Q3,0.29,0.3,0.29,5,172,2.83
+1217,78.0,Other,London,Retired,Uninsured,Heart Disease,Undergraduate,Divorced,47011.23,30,12,Psychiatry,66.9,7,4934.81,0.0,4934.81,3.3,9,70-79,Q4 (Highest),0.23,1.0,0.3,17,162,5.0
+1218,17.0,Other,Belfast,Student,Provider A,Hypertension,High school,Single,0.0,25,11,Psychiatry,59.28,5,4091.42,3273.13,818.28,3.24,9,10-19,Q1 (Lowest),0.2,0.2,0.36,4,172,4.17
+1219,71.0,Female,Belfast,Retired,Uninsured,Diabetes,Master,Divorced,43991.59,23,11,Rheumatology,61.35,5,3533.45,0.0,3533.45,2.83,11,70-79,Q2,0.22,1.0,0.48,2,171,3.83
+1220,96.0,Female,London,Retired,Provider B,Hypertension,Master,Widowed,41901.54,13,7,Pulmonology,66.38,2,2637.12,2373.4,263.71,2.69,7,90-99,Q2,0.15,0.1,0.54,38,135,2.17
+1221,66.0,Male,Dublin,Retired,Provider D,None,Master,Widowed,42477.43,27,11,Psychiatry,64.19,10,3982.19,3982.19,0.0,3.48,7,60-69,Q2,0.37,0.0,0.26,3,172,4.5
+1222,37.0,Female,Glasgow,Lawyer,Provider A,Hypertension,Master,Divorced,46988.59,22,9,Psychiatry,73.41,8,4010.02,3208.02,802.0,2.73,9,30-39,Q4 (Highest),0.36,0.2,0.41,2,175,3.67
+1223,13.0,Female,Belfast,Student,Provider D,Diabetes,Middle school/junior high,Single,0.0,21,10,General Practice,65.14,4,3387.87,3387.87,0.0,3.05,9,10-19,Q1 (Lowest),0.19,0.0,0.43,4,164,3.5
+1224,22.0,Female,Birmingham,Lawyer,Provider D,Cancer,Undergraduate,Married,43822.42,19,10,Pulmonology,74.47,4,2753.47,2753.47,0.0,3.26,7,20-29,Q2,0.21,0.0,0.37,3,164,3.17
+1225,65.0,Female,London,Retired,Provider C,None,Undergraduate,Widowed,43246.6,15,9,ENT,68.47,4,2550.28,1785.2,765.09,3.4,6,60-69,Q2,0.27,0.3,0.4,9,159,2.5
+1226,28.0,Female,Manchester,Artist,Provider C,Diabetes,Master,Single,40895.83,18,10,Psychiatry,69.22,3,3257.66,2280.36,977.3,3.33,5,20-29,Q1 (Lowest),0.17,0.3,0.28,1,164,3.0
+1227,45.0,Other,Glasgow,Businessperson,Uninsured,Heart Disease,Master,Married,45736.25,20,11,Psychiatry,71.75,5,3400.03,0.0,3400.03,3.0,7,40-49,Q3,0.25,1.0,0.35,1,169,3.33
+1228,56.0,Female,Belfast,Businessperson,Uninsured,None,Master,Widowed,44041.95,20,11,Rheumatology,68.3,3,3342.81,0.0,3342.81,3.65,4,50-59,Q2,0.15,1.0,0.2,12,162,3.33
+1229,93.0,Male,Manchester,Retired,Uninsured,Diabetes,Undergraduate,Married,44778.7,20,8,Gastroenterology,71.0,7,3226.78,0.0,3226.78,2.5,11,90-99,Q3,0.35,1.0,0.55,12,167,3.33
+1230,40.0,Male,Edinburgh,Artist,Provider D,None,PhD,Divorced,53774.24,21,8,Rheumatology,63.52,3,3887.73,3887.73,0.0,2.67,9,40-49,Q4 (Highest),0.14,0.0,0.43,7,169,3.5
+1231,63.0,Other,Belfast,Teacher,Provider D,Heart Disease,Undergraduate,Widowed,44430.1,20,10,Psychiatry,69.55,10,3696.74,3696.74,0.0,3.2,8,60-69,Q3,0.5,0.0,0.4,16,161,3.33
+1232,18.0,Other,Edinburgh,Student,Provider D,None,High school,Single,0.0,20,10,Rheumatology,62.55,9,3733.42,3434.11,299.31,3.7,4,10-19,Q1 (Lowest),0.45,0.08,0.2,13,167,3.33
+1233,91.0,Female,London,Retired,Provider D,Cancer,Master,Widowed,44166.71,19,10,Pulmonology,48.37,5,2947.6,2947.6,0.0,2.58,10,90-99,Q3,0.26,0.0,0.53,5,177,3.17
+1234,14.0,Female,Liverpool,Student,Provider A,Heart Disease,High school,Single,0.0,24,11,Gastroenterology,74.71,5,3849.69,3079.75,769.94,2.96,9,10-19,Q1 (Lowest),0.21,0.2,0.38,3,179,4.0
+1235,54.0,Female,London,Engineer,Provider D,Heart Disease,Master,Married,42717.42,19,9,Neurology,56.47,6,3581.96,3581.96,0.0,3.47,5,50-59,Q2,0.32,0.0,0.26,3,153,3.17
+1236,69.0,Other,Belfast,Retired,Provider C,Diabetes,Master,Divorced,47440.72,25,12,Cardiology,75.6,8,4154.98,2908.49,1246.49,3.2,8,60-69,Q4 (Highest),0.32,0.3,0.32,6,167,4.17
+1237,51.0,Male,Birmingham,Doctor,Provider B,Heart Disease,Undergraduate,Widowed,44244.64,22,12,Psychiatry,55.41,5,3268.01,2941.21,326.8,2.91,12,50-59,Q3,0.23,0.1,0.55,1,180,3.67
+1238,46.0,Other,London,Scientist,Provider A,Cancer,Master,Married,43862.18,28,12,General Practice,69.29,8,4596.58,3677.27,919.32,3.46,6,40-49,Q2,0.29,0.2,0.21,5,165,4.67
+1239,28.0,Female,Liverpool,Scientist,Provider C,Heart Disease,Master,Single,43688.19,21,11,Cardiology,64.62,3,3854.12,2697.88,1156.24,2.95,9,20-29,Q2,0.14,0.3,0.43,1,161,3.5
+1240,57.0,Other,Belfast,Doctor,Provider A,Cancer,Undergraduate,Divorced,45202.0,27,10,Pulmonology,65.7,9,4249.23,3399.39,849.85,3.52,7,50-59,Q3,0.33,0.2,0.26,2,164,4.5
+1241,32.0,Other,Dublin,Doctor,Provider B,Diabetes,Undergraduate,Divorced,39448.71,14,9,General Practice,52.64,4,2213.42,1992.08,221.34,3.14,4,30-39,Q1 (Lowest),0.29,0.1,0.29,7,169,2.33
+1242,72.0,Male,Edinburgh,Retired,Provider B,Heart Disease,Master,Widowed,45062.37,19,8,General Practice,66.05,6,2544.08,2289.67,254.41,3.26,7,70-79,Q3,0.32,0.1,0.37,14,161,3.17
+1243,0.0,Other,Edinburgh,Student,Provider A,Cancer,Pre-school,Single,0.0,23,10,Dermatology,71.0,5,3711.3,2969.04,742.26,2.61,11,0-9,Q1 (Lowest),0.22,0.2,0.48,1,175,3.83
+1244,17.0,Other,Edinburgh,Student,Provider D,Diabetes,High school,Single,0.0,20,10,Cardiology,78.7,6,3696.12,3696.12,0.0,3.6,3,10-19,Q1 (Lowest),0.3,0.0,0.15,12,167,3.33
+1245,38.0,Female,Glasgow,Businessperson,Provider A,None,Master,Married,47934.86,29,12,General Practice,70.83,8,4694.15,3755.32,938.83,3.03,11,30-39,Q4 (Highest),0.28,0.2,0.38,12,169,4.83
+1246,55.0,Other,Edinburgh,Engineer,Uninsured,Cancer,Undergraduate,Widowed,43741.05,22,10,Psychiatry,66.23,4,3658.25,0.0,3658.25,3.41,5,50-59,Q2,0.18,1.0,0.23,42,140,3.67
+1247,77.0,Male,Glasgow,Retired,Provider D,Hypertension,Undergraduate,Widowed,46928.88,16,9,General Practice,67.06,4,2552.04,2552.04,0.0,3.19,7,70-79,Q4 (Highest),0.25,0.0,0.44,5,176,2.67
+1248,96.0,Male,Birmingham,Retired,Provider A,Cancer,Undergraduate,Divorced,45828.43,22,10,General Practice,68.05,10,3127.9,2502.32,625.58,3.05,9,90-99,Q3,0.45,0.2,0.41,24,152,3.67
+1249,77.0,Female,Belfast,Retired,Provider B,Diabetes,Undergraduate,Married,44418.54,13,9,ENT,59.62,2,2311.76,2080.59,231.18,3.54,3,70-79,Q3,0.15,0.1,0.23,4,122,2.17
+1250,67.0,Female,Glasgow,Retired,Uninsured,Cancer,Undergraduate,Divorced,45615.04,23,9,General Practice,73.09,10,4188.19,0.0,4188.19,3.04,10,60-69,Q3,0.43,1.0,0.43,2,167,3.83
+1251,93.0,Other,Edinburgh,Retired,Provider B,Cancer,Master,Married,44356.59,17,10,Psychiatry,58.82,8,2886.64,2597.98,288.66,3.12,6,90-99,Q3,0.47,0.1,0.35,1,175,2.83
+1252,1.0,Other,London,Student,Uninsured,Diabetes,Pre-school,Single,0.0,20,9,Psychiatry,74.3,4,3327.82,0.0,3327.82,2.75,8,0-9,Q1 (Lowest),0.2,1.0,0.4,1,163,3.33
+1253,38.0,Other,Manchester,Engineer,Provider A,Hypertension,Master,Married,43726.6,15,10,General Practice,65.6,4,2522.28,2017.83,504.46,2.67,8,30-39,Q2,0.27,0.2,0.53,6,156,2.5
+1254,26.0,Other,London,Engineer,Provider B,None,Master,Divorced,45128.76,17,9,Endocrinology,59.59,8,3067.35,2770.74,296.61,3.18,4,20-29,Q3,0.47,0.1,0.24,8,172,2.83
+1255,50.0,Female,Dublin,Doctor,Provider B,Heart Disease,Undergraduate,Widowed,44531.29,17,10,General Practice,77.18,5,2161.84,1945.65,216.18,3.47,4,50-59,Q3,0.29,0.1,0.24,40,136,2.83
+1256,75.0,Other,Dublin,Retired,Provider B,Hypertension,Master,Widowed,42022.92,18,10,Emergency,64.67,7,3291.45,2962.31,329.15,3.06,7,70-79,Q2,0.39,0.1,0.39,4,166,3.0
+1257,10.0,Female,Belfast,Student,Provider C,Cancer,Elementary school,Single,0.0,13,7,General Practice,70.31,4,1749.95,1224.96,524.98,3.31,4,10-19,Q1 (Lowest),0.31,0.3,0.31,26,147,2.17
+1258,27.0,Other,Belfast,Nurse,Provider D,Diabetes,Undergraduate,Divorced,45610.43,27,10,Gastroenterology,70.85,9,4509.33,4509.33,0.0,3.04,10,20-29,Q3,0.33,0.0,0.37,20,156,4.5
+1259,6.0,Female,Manchester,Student,Uninsured,None,Kindergarten,Single,0.0,13,8,Pulmonology,77.69,5,2135.21,0.0,2135.21,3.23,4,0-9,Q1 (Lowest),0.38,1.0,0.31,40,131,2.17
+1260,52.0,Female,Liverpool,Lawyer,Provider D,None,Undergraduate,Divorced,44936.0,17,9,Psychiatry,64.06,7,2626.45,2626.45,0.0,2.88,8,50-59,Q3,0.41,0.0,0.47,15,146,2.83
+1261,67.0,Female,Edinburgh,Retired,Provider C,Hypertension,Undergraduate,Married,44816.1,20,10,Psychiatry,63.9,7,3318.41,2322.89,995.52,3.2,6,60-69,Q3,0.35,0.3,0.3,10,168,3.33
+1262,11.0,Female,Liverpool,Student,Provider A,Cancer,Middle school/junior high,Single,0.0,23,10,Gastroenterology,69.22,2,3809.7,3047.76,761.94,3.35,7,10-19,Q1 (Lowest),0.09,0.2,0.3,3,160,3.83
+1263,56.0,Female,Dublin,Nurse,Provider A,Hypertension,Undergraduate,Married,45589.82,19,10,General Practice,67.21,5,3205.21,2564.17,641.04,3.0,9,50-59,Q3,0.26,0.2,0.47,8,159,3.17
+1264,89.0,Male,Liverpool,Retired,Uninsured,Cancer,Undergraduate,Married,46298.77,26,11,Allergology,78.15,6,4699.43,0.0,4699.43,2.54,13,80-89,Q4 (Highest),0.23,1.0,0.5,4,176,4.33
+1265,31.0,Female,Glasgow,Nurse,Provider D,Diabetes,PhD,Single,53754.35,27,8,Psychiatry,67.48,9,4716.31,4716.31,0.0,3.26,9,30-39,Q4 (Highest),0.33,0.0,0.33,23,159,4.5
+1266,93.0,Other,Liverpool,Retired,Provider C,Heart Disease,Undergraduate,Widowed,44649.6,20,11,Neurology,69.75,5,3665.46,2565.82,1099.64,2.75,10,90-99,Q3,0.25,0.3,0.5,2,166,3.33
+1267,71.0,Female,Glasgow,Retired,Provider B,None,Master,Widowed,39846.05,22,10,Psychiatry,74.55,5,3233.65,2910.28,323.36,3.09,8,70-79,Q1 (Lowest),0.23,0.1,0.36,3,172,3.67
+1268,71.0,Female,Belfast,Retired,Uninsured,Heart Disease,Undergraduate,Divorced,44107.85,30,12,General Practice,77.2,11,4878.9,0.0,4878.9,2.83,14,70-79,Q3,0.37,1.0,0.47,1,175,5.0
+1269,100.0,Female,Dublin,Retired,Provider C,Hypertension,Undergraduate,Divorced,45208.67,24,9,General Practice,63.0,8,3741.29,2618.9,1122.39,3.5,9,,Q3,0.33,0.3,0.38,6,175,4.0
+1270,17.0,Female,Liverpool,Student,Uninsured,Hypertension,High school,Single,0.0,19,11,Psychiatry,88.71,7,3078.53,0.0,3078.53,2.95,10,10-19,Q1 (Lowest),0.37,1.0,0.53,23,156,3.17
+1271,84.0,Male,Glasgow,Retired,Provider C,Hypertension,Undergraduate,Divorced,42306.38,24,11,Psychiatry,68.88,5,3769.96,2638.97,1130.99,2.83,9,80-89,Q2,0.21,0.3,0.38,5,168,4.0
+1272,96.0,Female,Dublin,Retired,Provider B,Diabetes,Undergraduate,Widowed,43058.84,19,9,Psychiatry,77.63,4,3087.38,2778.64,308.74,3.42,5,90-99,Q2,0.21,0.1,0.26,1,165,3.17
+1273,22.0,Female,London,Artist,Uninsured,None,Undergraduate,Single,46479.38,21,9,General Practice,75.5,8,3111.58,0.0,3111.58,3.0,6,20-29,Q4 (Highest),0.38,1.0,0.29,4,175,3.5
+1274,74.0,Female,Birmingham,Retired,Provider D,Heart Disease,Undergraduate,Married,39960.33,12,7,Gastroenterology,61.33,3,1718.27,1718.27,0.0,3.58,4,70-79,Q1 (Lowest),0.25,0.0,0.33,27,135,2.0
+1275,37.0,Male,Manchester,Nurse,Provider A,Heart Disease,Undergraduate,Divorced,49262.75,12,8,Gastroenterology,68.67,3,1750.59,1400.48,350.12,2.5,8,30-39,Q4 (Highest),0.25,0.2,0.67,5,168,2.0
+1276,98.0,Female,London,Retired,Provider A,Cancer,Master,Married,45534.25,16,10,Neurology,66.25,5,2664.18,2131.34,532.84,2.94,7,90-99,Q3,0.31,0.2,0.44,33,144,2.67
+1277,14.0,Male,Edinburgh,Student,Uninsured,Heart Disease,High school,Single,0.0,17,8,Endocrinology,73.24,7,3092.68,0.0,3092.68,2.94,8,10-19,Q1 (Lowest),0.41,1.0,0.47,13,151,2.83
+1278,18.0,Male,Edinburgh,Student,Uninsured,Heart Disease,High school,Single,0.0,10,8,Emergency,67.2,4,1900.75,0.0,1900.75,3.1,4,10-19,Q1 (Lowest),0.4,1.0,0.4,34,128,1.67
+1279,71.0,Female,Manchester,Retired,Provider B,None,Undergraduate,Widowed,45450.92,19,10,Endocrinology,64.89,7,3358.81,2969.67,389.14,3.21,7,70-79,Q3,0.37,0.12,0.37,41,131,3.17
+1280,30.0,Other,Glasgow,Businessperson,Provider C,Diabetes,Master,Single,43864.08,13,7,Gastroenterology,71.15,1,2103.11,1472.18,630.93,3.23,4,30-39,Q2,0.08,0.3,0.31,17,159,2.17
+1281,68.0,Female,Manchester,Retired,Provider D,Cancer,Undergraduate,Divorced,46403.43,15,8,Allergology,64.73,4,2290.53,2290.53,0.0,2.87,7,60-69,Q4 (Highest),0.27,0.0,0.47,5,160,2.5
+1282,47.0,Female,Dublin,Nurse,Provider B,Diabetes,Master,Widowed,44233.14,21,9,General Practice,66.05,5,3087.74,2778.97,308.77,3.38,7,40-49,Q3,0.24,0.1,0.33,2,179,3.5
+1283,54.0,Female,Liverpool,Nurse,Provider B,Diabetes,Master,Divorced,45648.94,18,11,ENT,69.56,7,2986.39,2687.75,298.64,3.06,6,50-59,Q3,0.39,0.1,0.33,2,175,3.0
+1284,7.0,Male,Liverpool,Student,Provider A,Diabetes,Elementary school,Single,0.0,21,10,Cardiology,67.05,10,3899.28,3119.43,779.86,3.71,5,0-9,Q1 (Lowest),0.48,0.2,0.24,4,175,3.5
+1285,32.0,Male,Manchester,Teacher,Provider A,Heart Disease,Undergraduate,Married,42004.52,23,11,ENT,59.7,8,3636.9,2909.52,727.38,3.17,7,30-39,Q2,0.35,0.2,0.3,1,173,3.83
+1286,59.0,Female,Liverpool,Scientist,Provider A,Heart Disease,Undergraduate,Married,44990.3,25,9,Psychiatry,71.56,10,4457.0,3565.6,891.4,3.4,7,50-59,Q3,0.4,0.2,0.28,2,178,4.17
+1287,68.0,Male,Birmingham,Retired,Provider A,Cancer,Undergraduate,Widowed,43782.67,21,11,General Practice,76.86,8,3065.32,2452.25,613.06,3.05,7,60-69,Q2,0.38,0.2,0.33,6,163,3.5
+1288,81.0,Other,Edinburgh,Retired,Provider D,Cancer,Undergraduate,Married,42892.22,20,9,Pulmonology,54.75,6,2872.59,2872.59,0.0,3.25,9,80-89,Q2,0.3,0.0,0.45,5,171,3.33
+1289,16.0,Female,Belfast,Student,Provider C,Heart Disease,High school,Single,0.0,17,9,General Practice,64.82,7,2204.44,1543.11,661.33,3.47,3,10-19,Q1 (Lowest),0.41,0.3,0.18,15,166,2.83
+1290,11.0,Other,Birmingham,Student,Provider D,None,Middle school/junior high,Single,0.0,20,12,General Practice,72.85,2,3212.23,2956.12,256.11,3.45,6,10-19,Q1 (Lowest),0.1,0.08,0.3,6,175,3.33
+1291,56.0,Male,Birmingham,Scientist,Provider C,Heart Disease,Undergraduate,Widowed,45106.0,19,10,Emergency,68.42,3,3511.11,2457.78,1053.33,2.79,8,50-59,Q3,0.16,0.3,0.42,4,168,3.17
+1292,52.0,Other,London,Teacher,Uninsured,Heart Disease,Undergraduate,Widowed,47257.65,23,10,Allergology,76.0,6,3953.52,0.0,3953.52,2.61,11,50-59,Q4 (Highest),0.26,1.0,0.48,5,175,3.83
+1293,90.0,Female,Manchester,Retired,Uninsured,None,Undergraduate,Widowed,42116.57,21,11,Allergology,67.48,6,3245.82,0.0,3245.82,3.43,6,90-99,Q2,0.29,1.0,0.29,2,173,3.5
+1294,89.0,Other,Dublin,Retired,Provider D,Cancer,Undergraduate,Divorced,44292.91,27,13,Orthopedics,57.15,8,4294.68,4294.68,0.0,2.41,13,80-89,Q3,0.3,0.0,0.48,3,166,4.5
+1295,100.0,Female,Glasgow,Retired,Uninsured,None,Undergraduate,Divorced,46060.73,24,11,Rheumatology,62.46,3,3665.36,0.0,3665.36,3.71,4,,Q4 (Highest),0.12,1.0,0.17,16,163,4.0
+1296,99.0,Other,London,Retired,Provider C,None,Undergraduate,Married,45281.04,25,12,Psychiatry,72.2,4,4664.01,3264.8,1399.2,3.32,9,90-99,Q3,0.16,0.3,0.36,2,179,4.17
+1297,35.0,Other,Dublin,Artist,Provider C,Diabetes,Undergraduate,Divorced,46794.05,20,11,Pulmonology,76.25,5,3126.1,2188.27,937.83,3.5,7,30-39,Q4 (Highest),0.25,0.3,0.35,5,146,3.33
+1298,54.0,Male,Dublin,Artist,Provider C,Heart Disease,Master,Divorced,43823.4,10,9,Psychiatry,61.5,4,1724.25,1206.98,517.28,3.0,4,50-59,Q2,0.4,0.3,0.4,22,158,1.67
+1299,16.0,Male,Liverpool,Student,Provider C,Heart Disease,High school,Single,0.0,17,10,Gastroenterology,71.71,2,2279.96,1595.97,683.99,3.18,6,10-19,Q1 (Lowest),0.12,0.3,0.35,11,121,2.83
+1300,76.0,Other,Birmingham,Retired,Provider B,Diabetes,Master,Widowed,46208.39,18,9,ENT,60.56,4,3225.1,2902.59,322.51,3.06,7,70-79,Q4 (Highest),0.22,0.1,0.39,3,179,3.0
+1301,0.0,Male,Dublin,Student,Uninsured,None,Pre-school,Single,0.0,17,10,General Practice,69.29,4,2791.13,0.0,2791.13,3.06,7,0-9,Q1 (Lowest),0.24,1.0,0.41,5,160,2.83
+1302,62.0,Other,Edinburgh,Lawyer,Provider A,Heart Disease,Master,Widowed,42860.73,15,8,Neurology,50.73,5,2806.48,2245.18,561.3,2.47,7,60-69,Q2,0.33,0.2,0.47,10,158,2.5
+1303,34.0,Other,Manchester,Artist,Provider C,Hypertension,Master,Married,43914.47,17,10,Emergency,73.71,4,3649.87,2554.91,1094.96,3.0,8,30-39,Q2,0.24,0.3,0.47,39,142,2.83
+1304,0.0,Female,Glasgow,Student,Provider C,None,Pre-school,Single,0.0,35,12,Psychiatry,70.49,12,6229.69,4360.78,1868.91,2.86,15,0-9,Q1 (Lowest),0.34,0.3,0.43,5,174,5.83
+1305,62.0,Other,Liverpool,Artist,Provider A,Hypertension,Master,Divorced,45596.28,18,11,General Practice,73.44,5,2776.61,2221.29,555.32,2.67,10,60-69,Q3,0.28,0.2,0.56,29,138,3.0
+1306,91.0,Female,London,Retired,Provider D,Hypertension,Master,Widowed,44083.78,23,9,Dermatology,81.65,7,3735.25,3735.25,0.0,2.83,8,90-99,Q2,0.3,0.0,0.35,19,163,3.83
+1307,34.0,Male,Belfast,Scientist,Provider B,Diabetes,PhD,Divorced,54935.81,24,10,General Practice,63.17,5,3850.79,3465.71,385.08,3.29,9,30-39,Q4 (Highest),0.21,0.1,0.38,1,180,4.0
+1308,18.0,Male,Birmingham,Student,Provider A,Heart Disease,High school,Single,0.0,18,10,General Practice,83.17,6,2839.07,2271.25,567.81,3.17,6,10-19,Q1 (Lowest),0.33,0.2,0.33,17,161,3.0
+1309,66.0,Other,Glasgow,Retired,Uninsured,Diabetes,Undergraduate,Widowed,39671.91,11,7,Allergology,60.36,4,1583.37,0.0,1583.37,3.0,5,60-69,Q1 (Lowest),0.36,1.0,0.45,10,151,1.83
+1310,12.0,Male,London,Student,Provider A,Hypertension,Middle school/junior high,Single,0.0,23,11,General Practice,72.17,6,3500.33,2800.26,700.07,2.91,10,10-19,Q1 (Lowest),0.26,0.2,0.43,10,168,3.83
+1311,81.0,Male,Birmingham,Retired,Provider D,Hypertension,Undergraduate,Divorced,48049.9,20,11,Pulmonology,73.65,5,3378.84,3378.84,0.0,3.85,4,80-89,Q4 (Highest),0.25,0.0,0.2,2,172,3.33
+1312,72.0,Female,Belfast,Retired,Provider D,Heart Disease,Master,Married,43781.0,25,10,General Practice,69.88,10,3572.11,3572.11,0.0,3.56,6,70-79,Q2,0.4,0.0,0.24,3,179,4.17
+1313,1.0,Male,Glasgow,Student,Uninsured,Hypertension,Pre-school,Single,0.0,17,8,General Practice,73.65,5,3495.17,0.0,3495.17,3.0,8,0-9,Q1 (Lowest),0.29,1.0,0.47,31,148,2.83
+1314,62.0,Other,Belfast,Artist,Provider B,Hypertension,Master,Divorced,45282.52,27,11,Emergency,59.78,9,4805.48,4324.93,480.55,3.15,13,60-69,Q3,0.33,0.1,0.48,10,171,4.5
+1315,5.0,Other,Liverpool,Student,Provider A,None,Kindergarten,Single,0.0,18,7,Allergology,57.56,4,2822.17,2257.73,564.43,2.61,9,0-9,Q1 (Lowest),0.22,0.2,0.5,1,179,3.0
+1316,20.0,Male,Birmingham,Lawyer,Provider D,Cancer,Undergraduate,Single,45880.24,17,12,Emergency,72.88,4,3010.74,3010.74,0.0,2.94,6,20-29,Q4 (Highest),0.24,0.0,0.35,6,154,2.83
+1317,49.0,Female,Dublin,Teacher,Provider C,None,Master,Widowed,43310.8,10,9,Psychiatry,68.6,3,1615.85,1131.1,484.76,3.4,3,40-49,Q2,0.3,0.3,0.3,1,141,1.67
+1318,82.0,Male,London,Retired,Provider A,Cancer,Undergraduate,Divorced,41517.67,15,9,General Practice,59.07,4,2189.93,1751.95,437.99,3.27,5,80-89,Q2,0.27,0.2,0.33,6,174,2.5
+1319,51.0,Male,Liverpool,Engineer,Provider A,None,Master,Widowed,47930.0,19,10,Rheumatology,62.53,8,3392.66,2714.13,678.53,2.63,10,50-59,Q4 (Highest),0.42,0.2,0.53,9,162,3.17
+1320,75.0,Other,Glasgow,Retired,Uninsured,None,Master,Divorced,47600.5,16,10,Dermatology,77.44,4,2669.91,0.0,2669.91,3.25,6,70-79,Q4 (Highest),0.25,1.0,0.38,27,155,2.67
+1321,64.0,Female,Belfast,Engineer,Uninsured,None,Master,Married,40094.94,17,10,Rheumatology,65.12,5,2969.1,0.0,2969.1,3.12,6,60-69,Q1 (Lowest),0.29,1.0,0.35,4,154,2.83
+1322,6.0,Other,Edinburgh,Student,Provider A,Diabetes,Kindergarten,Single,0.0,19,10,Psychiatry,74.68,5,2751.06,2200.85,550.21,4.11,3,0-9,Q1 (Lowest),0.26,0.2,0.16,8,170,3.17
+1323,64.0,Female,Edinburgh,Teacher,Provider C,Heart Disease,Master,Married,45276.08,24,12,General Practice,69.75,8,3805.65,2663.95,1141.69,2.79,12,60-69,Q3,0.33,0.3,0.5,1,175,4.0
+1324,50.0,Other,Birmingham,Scientist,Provider A,Hypertension,Undergraduate,Divorced,43824.63,19,10,Neurology,63.74,7,3559.5,2847.6,711.9,2.89,8,50-59,Q2,0.37,0.2,0.42,5,171,3.17
+1325,10.0,Male,Manchester,Student,Provider D,Cancer,Elementary school,Single,0.0,27,10,Psychiatry,71.67,8,4262.82,4262.82,0.0,3.0,10,10-19,Q1 (Lowest),0.3,0.0,0.37,12,166,4.5
+1326,21.0,Male,Belfast,Businessperson,Provider A,Cancer,Undergraduate,Married,46328.69,16,10,Psychiatry,67.31,2,2858.74,2286.99,571.75,3.19,6,20-29,Q4 (Highest),0.12,0.2,0.38,3,175,2.67
+1327,86.0,Other,Edinburgh,Retired,Uninsured,Hypertension,Undergraduate,Divorced,47700.36,14,8,Psychiatry,64.14,5,2102.39,0.0,2102.39,3.57,4,80-89,Q4 (Highest),0.36,1.0,0.29,15,166,2.33
+1328,46.0,Other,Liverpool,Nurse,Provider D,Heart Disease,Undergraduate,Married,43999.62,20,11,Dermatology,59.5,9,3918.58,3918.58,0.0,2.45,11,40-49,Q2,0.45,0.0,0.55,1,169,3.33
+1329,88.0,Male,London,Retired,Provider D,Diabetes,Undergraduate,Divorced,46572.82,30,12,Emergency,57.9,8,5718.72,5718.72,0.0,2.97,13,80-89,Q4 (Highest),0.27,0.0,0.43,6,169,5.0
+1330,60.0,Female,Manchester,Artist,Uninsured,Diabetes,Undergraduate,Married,44938.29,21,10,ENT,65.76,4,3185.32,0.0,3185.32,3.52,7,60-69,Q3,0.19,1.0,0.33,4,162,3.5
+1331,62.0,Female,Dublin,Engineer,Provider A,Diabetes,Master,Divorced,42554.43,21,10,General Practice,77.86,7,3409.7,2727.76,681.94,3.1,10,60-69,Q2,0.33,0.2,0.48,7,170,3.5
+1332,2.0,Other,Belfast,Student,Provider D,Hypertension,Pre-school,Single,0.0,24,11,Pulmonology,62.96,9,3781.43,3781.43,0.0,2.88,11,0-9,Q1 (Lowest),0.38,0.0,0.46,38,135,4.0
+1333,0.0,Female,Belfast,Student,Provider B,Heart Disease,Pre-school,Single,0.0,28,12,Pulmonology,73.29,7,5166.2,4649.58,516.62,3.29,7,0-9,Q1 (Lowest),0.25,0.1,0.25,10,172,4.67
+1334,13.0,Female,Belfast,Student,Provider D,Heart Disease,Middle school/junior high,Single,0.0,16,11,ENT,65.0,5,2339.36,2339.36,0.0,2.69,9,10-19,Q1 (Lowest),0.31,0.0,0.56,28,153,2.67
+1335,50.0,Male,Glasgow,Lawyer,Provider B,Cancer,Master,Divorced,47192.64,22,11,Dermatology,70.41,7,3682.03,3313.82,368.2,3.05,10,50-59,Q4 (Highest),0.32,0.1,0.45,9,169,3.67
+1336,80.0,Male,Liverpool,Retired,Provider B,Cancer,Undergraduate,Divorced,44823.37,30,11,General Practice,60.23,10,4809.7,4328.73,480.97,3.33,12,80-89,Q3,0.33,0.1,0.4,4,169,5.0
+1337,76.0,Female,Liverpool,Retired,Provider B,Hypertension,Undergraduate,Widowed,44516.55,19,11,Pulmonology,60.63,4,3115.38,2803.84,311.54,3.21,7,70-79,Q3,0.21,0.1,0.37,6,175,3.17
+1338,25.0,Female,London,Engineer,Provider C,Cancer,Master,Married,45498.5,22,10,Rheumatology,55.82,5,3106.32,2174.43,931.9,3.09,9,20-29,Q3,0.23,0.3,0.41,1,176,3.67
+1339,73.0,Female,London,Retired,Provider B,Diabetes,Master,Widowed,44267.05,21,9,ENT,68.19,8,3085.71,2777.14,308.57,2.95,10,70-79,Q3,0.38,0.1,0.48,1,180,3.5
+1340,51.0,Male,Belfast,Doctor,Provider A,Cancer,Undergraduate,Widowed,44105.94,34,12,Endocrinology,61.76,7,6106.87,4885.5,1221.37,3.47,8,50-59,Q3,0.21,0.2,0.24,2,173,5.67
+1341,96.0,Male,Glasgow,Retired,Provider C,None,Master,Married,42828.72,18,9,Psychiatry,65.39,5,3128.86,2190.2,938.66,2.78,11,90-99,Q2,0.28,0.3,0.61,1,173,3.0
+1342,2.0,Female,Manchester,Student,Uninsured,Heart Disease,Pre-school,Single,0.0,25,12,Cardiology,69.52,5,3908.8,0.0,3908.8,2.88,12,0-9,Q1 (Lowest),0.2,1.0,0.48,9,151,4.17
+1343,91.0,Female,London,Retired,Provider A,Heart Disease,Master,Widowed,43536.48,27,11,General Practice,54.41,7,4222.06,3377.65,844.41,3.56,6,90-99,Q2,0.26,0.2,0.22,5,176,4.5
+1344,18.0,Other,Birmingham,Student,Provider B,None,High school,Single,0.0,21,10,Emergency,76.43,2,3935.08,3577.34,357.74,3.67,5,10-19,Q1 (Lowest),0.1,0.09,0.24,3,178,3.5
+1345,10.0,Female,Dublin,Student,Provider D,None,Elementary school,Single,0.0,25,12,General Practice,75.96,8,4067.84,3923.41,144.43,3.28,8,10-19,Q1 (Lowest),0.32,0.04,0.32,21,157,4.17
+1346,52.0,Other,Edinburgh,Nurse,Uninsured,None,Undergraduate,Divorced,43825.33,24,10,Neurology,77.21,11,3754.94,0.0,3754.94,3.17,10,50-59,Q2,0.46,1.0,0.42,3,163,4.0
+1347,69.0,Other,Edinburgh,Retired,Provider B,None,Master,Divorced,46103.0,11,7,General Practice,70.36,2,1550.43,1395.39,155.04,2.82,5,60-69,Q4 (Highest),0.18,0.1,0.45,4,136,1.83
+1348,42.0,Male,Belfast,Artist,Provider D,Heart Disease,Master,Divorced,43334.38,26,11,Psychiatry,79.27,8,4936.11,4936.11,0.0,3.42,8,40-49,Q2,0.31,0.0,0.31,8,168,4.33
+1349,17.0,Male,Belfast,Student,Uninsured,Heart Disease,High school,Single,0.0,18,9,Endocrinology,50.28,7,2854.77,0.0,2854.77,2.67,10,10-19,Q1 (Lowest),0.39,1.0,0.56,3,164,3.0
+1350,81.0,Other,Dublin,Retired,Uninsured,None,Undergraduate,Married,41747.82,17,12,Gastroenterology,65.18,6,2745.92,0.0,2745.92,3.0,6,80-89,Q2,0.35,1.0,0.35,26,154,2.83
+1351,62.0,Female,Glasgow,Artist,Provider A,Heart Disease,Undergraduate,Widowed,43132.38,16,10,Neurology,73.12,3,2729.17,2183.34,545.83,3.06,5,60-69,Q2,0.19,0.2,0.31,3,175,2.67
+1352,95.0,Female,Glasgow,Retired,Provider A,Hypertension,Undergraduate,Divorced,43563.57,21,10,Endocrinology,63.86,4,4028.71,3222.97,805.74,2.33,14,90-99,Q2,0.19,0.2,0.67,7,169,3.5
+1353,79.0,Other,Manchester,Retired,Provider A,Diabetes,Master,Divorced,43550.34,19,10,Psychiatry,74.21,6,3298.38,2638.71,659.68,3.11,7,70-79,Q2,0.32,0.2,0.37,8,171,3.17
+1354,58.0,Male,Birmingham,Businessperson,Provider D,Diabetes,Master,Divorced,42478.69,16,9,Psychiatry,77.0,3,2816.16,2816.16,0.0,3.12,7,50-59,Q2,0.19,0.0,0.44,9,168,2.67
+1355,62.0,Female,Liverpool,Businessperson,Provider A,None,Undergraduate,Divorced,44353.9,20,11,Psychiatry,66.05,5,3507.75,2806.2,701.55,2.4,11,60-69,Q3,0.25,0.2,0.55,2,180,3.33
+1356,51.0,Other,Dublin,Scientist,Provider A,Cancer,Undergraduate,Married,43498.58,19,9,Orthopedics,53.42,5,3583.18,2866.54,716.64,3.26,6,50-59,Q2,0.26,0.2,0.32,6,176,3.17
+1357,78.0,Other,Glasgow,Retired,Provider C,None,Master,Widowed,44160.42,12,9,Psychiatry,83.54,6,2234.19,1563.93,670.26,2.75,5,70-79,Q3,0.5,0.3,0.42,4,169,2.0
+1358,48.0,Male,Manchester,Doctor,Provider C,Diabetes,Master,Divorced,39507.33,12,7,Orthopedics,59.17,2,2059.35,1441.55,617.81,3.17,4,40-49,Q1 (Lowest),0.17,0.3,0.33,13,158,2.0
+1359,75.0,Male,Glasgow,Retired,Provider B,None,Master,Widowed,44511.27,28,12,Psychiatry,70.43,8,4456.0,4013.54,442.46,2.64,13,70-79,Q3,0.29,0.1,0.46,33,143,4.67
+1360,1.0,Male,Birmingham,Student,Provider C,Cancer,Pre-school,Single,0.0,22,10,General Practice,76.55,4,2976.54,2083.58,892.96,3.05,9,0-9,Q1 (Lowest),0.18,0.3,0.41,7,157,3.67
+1361,50.0,Other,Belfast,Teacher,Provider D,Hypertension,Undergraduate,Widowed,44935.03,31,11,General Practice,68.19,7,5561.41,5561.41,0.0,2.77,15,50-59,Q3,0.23,0.0,0.48,7,166,5.17
+1362,5.0,Other,Edinburgh,Student,Provider D,None,Kindergarten,Single,0.0,28,12,Endocrinology,67.46,12,4773.2,4477.27,295.93,3.39,9,0-9,Q1 (Lowest),0.43,0.06,0.32,4,171,4.67
+1363,18.0,Male,Glasgow,Student,Provider A,None,High school,Single,0.0,28,9,Neurology,72.93,7,5640.91,4512.73,1128.18,3.43,8,10-19,Q1 (Lowest),0.25,0.2,0.29,5,174,4.67
+1364,77.0,Female,Manchester,Retired,Provider D,Hypertension,Master,Divorced,48783.96,24,11,Endocrinology,65.58,3,4104.42,4104.42,0.0,2.75,12,70-79,Q4 (Highest),0.12,0.0,0.5,36,142,4.0
+1365,99.0,Female,Manchester,Retired,Uninsured,Cancer,Undergraduate,Divorced,44800.86,21,10,ENT,83.67,6,3276.19,0.0,3276.19,2.81,10,90-99,Q3,0.29,1.0,0.48,2,174,3.5
+1366,32.0,Other,Manchester,Lawyer,Provider C,Diabetes,Master,Married,44478.35,17,8,Psychiatry,62.88,2,3685.8,2580.06,1105.74,3.53,6,30-39,Q3,0.12,0.3,0.35,6,170,2.83
+1367,66.0,Male,London,Retired,Provider C,None,Undergraduate,Divorced,43572.39,22,10,Pulmonology,71.27,8,3563.98,2494.79,1069.19,3.0,10,60-69,Q2,0.36,0.3,0.45,3,176,3.67
+1368,47.0,Male,Belfast,Doctor,Uninsured,Diabetes,Master,Divorced,40920.11,19,9,Neurology,67.53,6,3710.91,0.0,3710.91,3.26,5,40-49,Q1 (Lowest),0.32,1.0,0.26,8,174,3.17
+1369,26.0,Female,Glasgow,Teacher,Uninsured,Diabetes,Master,Married,42644.46,28,11,General Practice,81.36,7,4059.26,0.0,4059.26,2.93,13,20-29,Q2,0.25,1.0,0.46,1,179,4.67
+1370,23.0,Other,Belfast,Doctor,Provider B,Diabetes,Master,Married,45546.22,18,9,Psychiatry,64.22,7,2937.3,2643.57,293.73,4.06,2,20-29,Q3,0.39,0.1,0.11,7,154,3.0
+1371,12.0,Female,Liverpool,Student,Provider C,None,Middle school/junior high,Single,0.0,13,9,Dermatology,62.23,3,2104.27,1472.99,631.28,2.85,6,10-19,Q1 (Lowest),0.23,0.3,0.46,7,165,2.17
+1372,31.0,Other,Edinburgh,Doctor,Provider D,Heart Disease,PhD,Married,50702.39,18,11,Neurology,70.22,5,2736.87,2736.87,0.0,3.44,5,30-39,Q4 (Highest),0.28,0.0,0.28,4,168,3.0
+1373,90.0,Other,London,Retired,Uninsured,None,Master,Widowed,45327.62,17,9,ENT,62.88,6,2717.45,0.0,2717.45,3.47,4,90-99,Q3,0.35,1.0,0.24,2,176,2.83
+1374,23.0,Other,Dublin,Nurse,Provider C,Cancer,Undergraduate,Single,47646.58,24,11,Orthopedics,66.46,4,4793.41,3355.39,1438.02,2.79,11,20-29,Q4 (Highest),0.17,0.3,0.46,20,161,4.0
+1375,83.0,Female,Birmingham,Retired,Provider B,Diabetes,Undergraduate,Widowed,46346.29,24,11,Psychiatry,72.0,3,4057.89,3652.1,405.79,3.71,6,80-89,Q4 (Highest),0.12,0.1,0.25,2,180,4.0
+1376,80.0,Female,Edinburgh,Retired,Provider C,Heart Disease,Master,Married,43634.56,18,7,General Practice,73.44,5,2894.33,2026.03,868.3,2.89,9,80-89,Q2,0.28,0.3,0.5,6,169,3.0
+1377,100.0,Male,Belfast,Retired,Provider D,Cancer,Undergraduate,Married,43537.65,20,10,Psychiatry,70.55,6,3585.94,3585.94,0.0,3.25,8,,Q2,0.3,0.0,0.4,3,175,3.33
+1378,61.0,Male,Belfast,Businessperson,Uninsured,Heart Disease,Undergraduate,Divorced,42147.88,17,10,General Practice,65.82,6,2352.84,0.0,2352.84,2.24,10,60-69,Q2,0.35,1.0,0.59,1,173,2.83
+1379,22.0,Female,Edinburgh,Lawyer,Provider C,None,Undergraduate,Married,41956.1,10,7,Neurology,66.5,5,1995.36,1396.75,598.61,3.9,2,20-29,Q2,0.5,0.3,0.2,8,173,1.67
+1380,19.0,Other,London,Engineer,Provider D,Hypertension,Undergraduate,Married,43833.53,19,11,General Practice,64.21,7,3062.48,3062.48,0.0,2.84,7,10-19,Q2,0.37,0.0,0.37,7,165,3.17
+1381,55.0,Female,Glasgow,Artist,Provider D,Hypertension,Undergraduate,Married,46301.25,24,13,General Practice,61.67,10,4129.26,4129.26,0.0,2.71,12,50-59,Q4 (Highest),0.42,0.0,0.5,6,174,4.0
+1382,11.0,Male,Liverpool,Student,Provider A,Heart Disease,Middle school/junior high,Single,0.0,22,11,Dermatology,81.64,1,3729.37,2983.5,745.87,3.36,8,10-19,Q1 (Lowest),0.05,0.2,0.36,3,178,3.67
+1383,96.0,Male,Birmingham,Retired,Provider D,Cancer,Master,Widowed,47182.83,24,12,Psychiatry,73.67,7,3784.35,3784.35,0.0,2.83,12,90-99,Q4 (Highest),0.29,0.0,0.5,6,169,4.0
+1384,44.0,Other,Liverpool,Doctor,Provider C,Heart Disease,Master,Married,43996.92,25,11,Emergency,60.2,5,4160.34,2912.24,1248.1,2.6,15,40-49,Q2,0.2,0.3,0.6,5,170,4.17
+1385,75.0,Female,Edinburgh,Retired,Provider C,Hypertension,Undergraduate,Divorced,44285.78,27,13,Psychiatry,70.26,9,4451.49,3116.05,1335.45,3.48,6,70-79,Q3,0.33,0.3,0.22,1,180,4.5
+1386,71.0,Other,Birmingham,Retired,Provider C,Cancer,Master,Married,45257.83,18,9,ENT,65.61,6,2482.12,1737.48,744.64,3.06,8,70-79,Q3,0.33,0.3,0.44,7,154,3.0
+1387,15.0,Male,Birmingham,Student,Provider D,Hypertension,High school,Single,0.0,23,13,Pulmonology,63.87,4,3815.5,3815.5,0.0,3.04,8,10-19,Q1 (Lowest),0.17,0.0,0.35,6,167,3.83
+1388,15.0,Male,Birmingham,Student,Provider C,Cancer,High school,Single,0.0,20,11,General Practice,70.1,4,3178.27,2224.79,953.48,3.3,7,10-19,Q1 (Lowest),0.2,0.3,0.35,26,139,3.33
+1389,10.0,Other,Glasgow,Student,Provider D,Diabetes,Elementary school,Single,0.0,20,12,Gastroenterology,54.3,7,3333.91,3333.91,0.0,3.35,6,10-19,Q1 (Lowest),0.35,0.0,0.3,14,156,3.33
+1390,12.0,Female,Birmingham,Student,Provider C,None,Middle school/junior high,Single,0.0,16,9,Endocrinology,71.31,3,2486.15,1740.3,745.84,2.88,8,10-19,Q1 (Lowest),0.19,0.3,0.5,6,166,2.67
+1391,16.0,Other,Liverpool,Student,Provider B,Heart Disease,High school,Single,0.0,16,9,Neurology,63.88,3,2697.81,2428.03,269.78,2.69,8,10-19,Q1 (Lowest),0.19,0.1,0.5,7,174,2.67
+1392,87.0,Female,Manchester,Retired,Uninsured,Hypertension,Undergraduate,Divorced,41949.53,15,9,Psychiatry,74.07,3,2159.68,0.0,2159.68,2.93,9,80-89,Q2,0.2,1.0,0.6,28,147,2.5
+1393,29.0,Other,Glasgow,Nurse,Provider C,Hypertension,Undergraduate,Married,48433.77,11,9,General Practice,59.45,1,1874.54,1312.18,562.36,3.91,2,20-29,Q4 (Highest),0.09,0.3,0.18,4,126,1.83
+1394,81.0,Other,Dublin,Retired,Provider B,Heart Disease,Master,Divorced,45146.43,23,12,Psychiatry,69.17,2,3938.76,3544.89,393.88,2.87,10,80-89,Q3,0.09,0.1,0.43,7,172,3.83
+1395,45.0,Other,Glasgow,Engineer,Provider A,Diabetes,Undergraduate,Widowed,45525.53,17,9,Neurology,63.82,4,3232.22,2585.77,646.44,3.12,7,40-49,Q3,0.24,0.2,0.41,6,175,2.83
+1396,42.0,Other,Manchester,Doctor,Provider C,Heart Disease,Undergraduate,Married,45101.12,17,7,General Practice,65.88,7,2886.81,2020.77,866.04,3.53,4,40-49,Q3,0.41,0.3,0.24,22,153,2.83
+1397,31.0,Female,Belfast,Doctor,Provider A,Cancer,Master,Married,43931.9,21,9,Endocrinology,62.19,5,3166.02,2532.81,633.2,3.43,7,30-39,Q2,0.24,0.2,0.33,2,179,3.5
+1398,5.0,Female,Glasgow,Student,Provider D,Cancer,Kindergarten,Single,0.0,20,11,Rheumatology,71.5,7,3325.09,3325.09,0.0,3.1,7,0-9,Q1 (Lowest),0.35,0.0,0.35,11,171,3.33
+1399,63.0,Other,Liverpool,Teacher,Uninsured,Hypertension,Undergraduate,Divorced,47164.67,24,12,Emergency,78.58,10,4307.7,0.0,4307.7,2.79,13,60-69,Q4 (Highest),0.42,1.0,0.54,6,176,4.0
+1400,42.0,Male,Birmingham,Engineer,Provider C,Heart Disease,Master,Divorced,43479.32,25,9,Psychiatry,68.84,9,3864.06,2704.84,1159.22,2.92,12,40-49,Q2,0.36,0.3,0.48,17,145,4.17
+1401,11.0,Female,Manchester,Student,Provider B,Heart Disease,Middle school/junior high,Single,0.0,14,8,Psychiatry,68.5,3,2085.1,1876.59,208.51,3.14,5,10-19,Q1 (Lowest),0.21,0.1,0.36,6,155,2.33
+1402,40.0,Male,Dublin,Doctor,Provider B,None,Master,Single,47231.53,19,9,General Practice,74.26,3,3072.73,2770.18,302.55,3.47,4,40-49,Q4 (Highest),0.16,0.1,0.21,2,179,3.17
+1403,31.0,Other,Belfast,Doctor,Provider A,Diabetes,Undergraduate,Married,43361.75,20,10,Psychiatry,61.3,5,3515.0,2812.0,703.0,3.0,10,30-39,Q2,0.25,0.2,0.5,15,135,3.33
+1404,27.0,Other,Dublin,Scientist,Provider B,None,Master,Single,43782.91,22,10,Gastroenterology,54.0,4,3389.71,3057.87,331.84,3.36,7,20-29,Q2,0.18,0.1,0.32,10,140,3.67
+1405,45.0,Male,Belfast,Lawyer,Provider D,Diabetes,Undergraduate,Divorced,43482.12,16,10,Psychiatry,60.5,3,2643.96,2643.96,0.0,3.44,5,40-49,Q2,0.19,0.0,0.31,11,170,2.67
+1406,62.0,Male,Glasgow,Doctor,Provider D,Cancer,Undergraduate,Married,43266.92,24,10,Neurology,68.33,6,3814.99,3814.99,0.0,2.79,11,60-69,Q2,0.25,0.0,0.46,11,164,4.0
+1407,52.0,Other,Edinburgh,Lawyer,Uninsured,Diabetes,Master,Widowed,46702.56,18,9,Psychiatry,70.89,3,2667.01,0.0,2667.01,2.94,10,50-59,Q4 (Highest),0.17,1.0,0.56,2,172,3.0
+1408,76.0,Other,Belfast,Retired,Provider B,Hypertension,Undergraduate,Widowed,45928.48,20,8,Psychiatry,65.15,4,2913.1,2621.79,291.31,3.05,8,70-79,Q4 (Highest),0.2,0.1,0.4,6,169,3.33
+1409,90.0,Other,Glasgow,Retired,Uninsured,Diabetes,Master,Widowed,47744.36,21,11,Orthopedics,71.86,7,3842.55,0.0,3842.55,2.95,11,90-99,Q4 (Highest),0.33,1.0,0.52,2,175,3.5
+1410,78.0,Male,London,Retired,Provider D,Heart Disease,Master,Married,43582.91,22,10,Endocrinology,72.91,9,3691.13,3691.13,0.0,3.14,9,70-79,Q2,0.41,0.0,0.41,9,168,3.67
+1411,17.0,Female,Birmingham,Student,Provider A,Heart Disease,High school,Single,0.0,18,11,Psychiatry,66.61,4,2748.72,2198.97,549.74,3.28,6,10-19,Q1 (Lowest),0.22,0.2,0.33,16,154,3.0
+1412,13.0,Other,Liverpool,Student,Uninsured,Diabetes,Middle school/junior high,Single,0.0,21,10,Endocrinology,70.14,8,4015.33,0.0,4015.33,3.33,7,10-19,Q1 (Lowest),0.38,1.0,0.33,12,164,3.5
+1413,50.0,Male,Manchester,Scientist,Provider A,Diabetes,Master,Widowed,43430.47,17,8,Psychiatry,61.59,3,2841.73,2273.38,568.35,3.41,4,50-59,Q2,0.18,0.2,0.24,13,144,2.83
+1414,58.0,Female,Glasgow,Teacher,Provider D,Cancer,Undergraduate,Widowed,42172.22,18,9,Allergology,69.0,7,3093.08,3093.08,0.0,3.56,6,50-59,Q2,0.39,0.0,0.33,2,172,3.0
+1415,38.0,Other,Edinburgh,Scientist,Provider C,Hypertension,PhD,Married,47567.22,23,11,Endocrinology,63.09,8,4242.0,2969.4,1272.6,2.61,13,30-39,Q4 (Highest),0.35,0.3,0.57,7,160,3.83
+1416,32.0,Male,Manchester,Engineer,Provider C,Heart Disease,PhD,Single,54493.23,22,11,Psychiatry,65.77,4,3615.84,2531.09,1084.75,3.36,8,30-39,Q4 (Highest),0.18,0.3,0.36,6,156,3.67
+1417,44.0,Female,Edinburgh,Engineer,Provider C,Heart Disease,Master,Married,42829.22,18,11,Psychiatry,60.17,6,2716.49,1901.54,814.95,3.0,8,40-49,Q2,0.33,0.3,0.44,2,165,3.0
+1418,45.0,Male,Birmingham,Nurse,Provider C,Cancer,Master,Widowed,48969.0,13,9,Orthopedics,73.92,4,2190.45,1533.32,657.14,3.15,5,40-49,Q4 (Highest),0.31,0.3,0.38,6,172,2.17
+1419,54.0,Other,Manchester,Artist,Provider B,Diabetes,Master,Widowed,43889.63,19,11,Psychiatry,67.47,7,3200.86,2880.78,320.09,3.0,7,50-59,Q2,0.37,0.1,0.37,2,179,3.17
+1420,83.0,Male,Belfast,Retired,Provider D,Diabetes,Master,Married,46733.35,20,9,Psychiatry,56.15,7,3161.69,3161.69,0.0,2.5,13,80-89,Q4 (Highest),0.35,0.0,0.65,3,169,3.33
+1421,54.0,Other,Birmingham,Teacher,Provider B,Diabetes,Undergraduate,Divorced,43231.64,28,11,Endocrinology,70.36,6,4087.94,3679.14,408.79,2.79,13,50-59,Q2,0.21,0.1,0.46,13,153,4.67
+1422,41.0,Female,Edinburgh,Lawyer,Uninsured,Hypertension,Undergraduate,Married,46220.93,15,5,Psychiatry,67.87,6,2052.5,0.0,2052.5,4.13,2,40-49,Q4 (Highest),0.4,1.0,0.13,7,165,2.5
+1423,63.0,Other,Manchester,Scientist,Provider C,Cancer,Master,Widowed,42234.82,17,11,Psychiatry,68.41,9,3261.09,2282.76,978.33,3.0,8,60-69,Q2,0.53,0.3,0.47,10,156,2.83
+1424,91.0,Other,Dublin,Retired,Provider D,Heart Disease,Undergraduate,Divorced,47722.25,18,10,Psychiatry,70.67,6,3221.65,3221.65,0.0,3.06,8,90-99,Q4 (Highest),0.33,0.0,0.44,8,170,3.0
+1425,44.0,Male,Edinburgh,Artist,Provider D,None,Undergraduate,Divorced,41694.76,17,10,ENT,67.94,7,2449.91,2449.91,0.0,3.53,5,40-49,Q2,0.41,0.0,0.29,6,171,2.83
+1426,60.0,Male,Dublin,Teacher,Provider C,Heart Disease,Master,Divorced,46653.08,24,10,Psychiatry,65.54,5,3814.96,2670.47,1144.49,2.75,12,60-69,Q4 (Highest),0.21,0.3,0.5,4,178,4.0
+1427,54.0,Male,Liverpool,Engineer,Provider C,None,Undergraduate,Married,48510.32,19,9,General Practice,66.63,4,2992.94,2095.06,897.88,3.05,6,50-59,Q4 (Highest),0.21,0.3,0.32,1,180,3.17
+1428,34.0,Female,Edinburgh,Artist,Uninsured,None,Undergraduate,Divorced,45608.5,14,8,Orthopedics,81.5,2,2504.5,0.0,2504.5,3.21,5,30-39,Q3,0.14,1.0,0.36,48,132,2.33
+1429,46.0,Female,Dublin,Teacher,Provider C,None,Undergraduate,Divorced,43766.0,15,7,General Practice,67.73,3,2654.2,1857.94,796.26,2.73,8,40-49,Q2,0.2,0.3,0.53,11,155,2.5
+1430,6.0,Female,Manchester,Student,Uninsured,Cancer,Kindergarten,Single,0.0,20,11,General Practice,63.45,3,3223.51,0.0,3223.51,3.65,4,0-9,Q1 (Lowest),0.15,1.0,0.2,19,162,3.33
+1431,26.0,Female,Birmingham,Scientist,Provider D,Heart Disease,Master,Married,44860.66,16,10,General Practice,59.69,2,2506.29,2506.29,0.0,3.62,2,20-29,Q3,0.12,0.0,0.12,19,155,2.67
+1432,28.0,Male,Birmingham,Nurse,Uninsured,None,Master,Divorced,45385.73,22,10,Emergency,68.86,7,3738.25,0.0,3738.25,3.32,10,20-29,Q3,0.32,1.0,0.45,3,176,3.67
+1433,9.0,Other,Dublin,Student,Provider A,None,Elementary school,Single,0.0,35,13,Dermatology,67.66,12,5650.11,4520.09,1130.02,3.09,14,0-9,Q1 (Lowest),0.34,0.2,0.4,2,175,5.83
+1434,5.0,Male,Birmingham,Student,Provider D,None,Kindergarten,Single,0.0,27,12,General Practice,65.11,7,4725.4,4572.89,152.51,2.78,12,0-9,Q1 (Lowest),0.26,0.03,0.44,1,177,4.5
+1435,87.0,Other,Birmingham,Retired,Provider B,Cancer,Master,Divorced,43570.47,18,10,General Practice,59.33,7,3014.46,2713.02,301.45,2.83,9,80-89,Q2,0.39,0.1,0.5,2,169,3.0
+1436,19.0,Female,Dublin,Lawyer,Provider A,Hypertension,Undergraduate,Single,48341.88,16,8,Endocrinology,70.38,5,2654.76,2123.81,530.95,3.25,4,10-19,Q4 (Highest),0.31,0.2,0.25,12,123,2.67
+1437,56.0,Female,Manchester,Nurse,Uninsured,Heart Disease,Master,Widowed,47002.56,18,9,Allergology,60.11,4,3420.73,0.0,3420.73,3.44,5,50-59,Q4 (Highest),0.22,1.0,0.28,10,168,3.0
+1438,25.0,Female,London,Lawyer,Provider C,None,Master,Single,45541.62,16,9,ENT,58.19,1,2462.33,1723.63,738.7,3.31,4,20-29,Q3,0.06,0.3,0.25,28,144,2.67
+1439,14.0,Female,Belfast,Student,Provider B,Heart Disease,High school,Single,0.0,23,10,Dermatology,63.52,6,4169.69,3752.72,416.97,2.39,15,10-19,Q1 (Lowest),0.26,0.1,0.65,3,175,3.83
+1440,37.0,Other,Dublin,Artist,Provider B,Heart Disease,Undergraduate,Single,48825.91,23,10,General Practice,63.48,8,3803.22,3422.9,380.32,3.22,6,30-39,Q4 (Highest),0.35,0.1,0.26,21,160,3.83
+1441,60.0,Male,Birmingham,Teacher,Provider A,Diabetes,Master,Widowed,43642.9,21,10,Gastroenterology,74.0,7,3607.16,2885.73,721.43,3.38,5,60-69,Q2,0.33,0.2,0.24,2,171,3.5
+1442,82.0,Male,Dublin,Retired,Provider A,Diabetes,Master,Widowed,44909.71,17,11,Gastroenterology,72.59,6,2714.43,2171.54,542.89,2.88,7,80-89,Q3,0.35,0.2,0.41,10,172,2.83
+1443,16.0,Male,Belfast,Student,Provider D,None,High school,Single,0.0,18,9,Psychiatry,63.78,4,2806.41,2806.41,0.0,3.06,8,10-19,Q1 (Lowest),0.22,0.0,0.44,2,163,3.0
+1444,27.0,Other,Edinburgh,Artist,Provider D,Diabetes,Undergraduate,Married,46743.06,18,9,Orthopedics,61.28,3,2851.79,2851.79,0.0,3.44,5,20-29,Q4 (Highest),0.17,0.0,0.28,5,177,3.0
+1445,97.0,Male,Edinburgh,Retired,Provider C,Diabetes,Undergraduate,Widowed,45813.61,19,9,Allergology,72.26,3,3161.14,2125.59,1035.54,3.05,8,90-99,Q3,0.16,0.33,0.42,7,173,3.17
+1446,75.0,Male,Birmingham,Retired,Provider B,Cancer,Undergraduate,Married,46537.21,29,13,Gastroenterology,60.59,9,5397.1,4857.39,539.71,3.03,14,70-79,Q4 (Highest),0.31,0.1,0.48,22,158,4.83
+1447,56.0,Female,Liverpool,Artist,Provider B,Heart Disease,Master,Divorced,40702.45,20,9,General Practice,60.4,4,3273.15,2945.84,327.32,3.05,7,50-59,Q1 (Lowest),0.2,0.1,0.35,3,178,3.33
+1448,78.0,Female,Dublin,Retired,Uninsured,Hypertension,Master,Divorced,48015.31,16,7,Emergency,64.12,5,3208.04,0.0,3208.04,2.94,7,70-79,Q4 (Highest),0.31,1.0,0.44,1,181,2.67
+1449,87.0,Other,Edinburgh,Retired,Provider D,Hypertension,Master,Married,42937.79,24,9,Allergology,71.21,8,3620.4,3620.4,0.0,2.79,11,80-89,Q2,0.33,0.0,0.46,2,171,4.0
+1450,77.0,Male,Liverpool,Retired,Provider C,None,Undergraduate,Widowed,45747.62,20,11,Psychiatry,69.42,7,3272.09,2290.46,981.63,3.15,8,70-79,Q3,0.35,0.3,0.4,7,167,3.33
+1451,94.0,Female,London,Retired,Provider B,None,Undergraduate,Married,45605.03,30,11,Cardiology,65.27,7,5184.1,4614.15,569.95,3.07,11,90-99,Q3,0.23,0.11,0.37,2,178,5.0
+1452,93.0,Female,Edinburgh,Retired,Uninsured,None,Undergraduate,Divorced,43835.75,16,10,Endocrinology,58.94,7,2769.19,0.0,2769.19,3.31,5,90-99,Q2,0.44,1.0,0.31,2,151,2.67
+1453,95.0,Female,Birmingham,Retired,Provider A,Diabetes,Undergraduate,Divorced,45752.64,25,10,General Practice,68.32,4,4165.42,3332.33,833.08,2.56,10,90-99,Q3,0.16,0.2,0.4,12,167,4.17
+1454,38.0,Other,Glasgow,Artist,Provider C,None,PhD,Single,50641.39,18,9,General Practice,75.89,4,3035.08,2124.56,910.53,3.22,6,30-39,Q4 (Highest),0.22,0.3,0.33,4,173,3.0
+1455,99.0,Male,London,Retired,Provider A,Hypertension,Master,Married,42472.3,30,13,General Practice,66.7,6,4652.21,3721.77,930.44,3.4,11,90-99,Q2,0.2,0.2,0.37,5,175,5.0
+1456,30.0,Female,Glasgow,Lawyer,Uninsured,Diabetes,Master,Single,44931.93,28,12,Psychiatry,71.89,11,4405.68,0.0,4405.68,3.54,5,30-39,Q3,0.39,1.0,0.18,1,169,4.67
+1457,77.0,Male,Birmingham,Retired,Provider D,Heart Disease,Undergraduate,Widowed,44326.39,18,11,General Practice,64.44,7,2942.64,2942.64,0.0,2.61,10,70-79,Q3,0.39,0.0,0.56,7,153,3.0
+1458,5.0,Other,Birmingham,Student,Provider C,Hypertension,Kindergarten,Single,0.0,17,9,Psychiatry,71.47,5,3064.69,2145.29,919.41,3.35,5,0-9,Q1 (Lowest),0.29,0.3,0.29,34,142,2.83
+1459,99.0,Female,Dublin,Retired,Provider A,Hypertension,Undergraduate,Divorced,43765.54,24,11,Psychiatry,67.5,7,4057.25,3245.8,811.45,3.29,8,90-99,Q2,0.29,0.2,0.33,2,176,4.0
+1460,29.0,Male,Dublin,Artist,Provider D,Cancer,Master,Single,41292.64,14,7,Emergency,66.21,4,3428.35,3428.35,0.0,3.29,4,20-29,Q1 (Lowest),0.29,0.0,0.29,23,157,2.33
+1461,12.0,Female,Birmingham,Student,Provider C,Diabetes,Middle school/junior high,Single,0.0,26,11,Endocrinology,62.04,6,5192.43,3634.7,1557.73,2.92,10,10-19,Q1 (Lowest),0.23,0.3,0.38,3,177,4.33
+1462,42.0,Male,Manchester,Nurse,Provider D,None,Undergraduate,Widowed,46208.61,19,9,Psychiatry,60.79,3,3479.68,3479.68,0.0,2.89,8,40-49,Q4 (Highest),0.16,0.0,0.42,4,168,3.17
+1463,38.0,Male,Liverpool,Doctor,Provider D,Cancer,Master,Divorced,43448.84,25,11,Psychiatry,65.84,6,3881.26,3881.26,0.0,3.44,5,30-39,Q2,0.24,0.0,0.2,13,162,4.17
+1464,50.0,Male,Birmingham,Doctor,Uninsured,Diabetes,Master,Married,44259.93,14,9,Psychiatry,60.07,5,2535.58,0.0,2535.58,3.21,6,50-59,Q3,0.36,1.0,0.43,10,121,2.33
+1465,19.0,Female,Birmingham,Engineer,Provider A,Cancer,Undergraduate,Married,45074.12,24,12,Psychiatry,64.0,7,4071.61,3257.29,814.32,3.17,7,10-19,Q3,0.29,0.2,0.29,11,165,4.0
+1466,24.0,Male,Liverpool,Lawyer,Provider B,Heart Disease,Undergraduate,Single,45066.35,17,9,Gastroenterology,62.35,8,2871.94,2584.74,287.19,2.88,6,20-29,Q3,0.47,0.1,0.35,23,150,2.83
+1467,37.0,Female,Manchester,Artist,Provider B,Cancer,Undergraduate,Divorced,44098.9,20,9,Psychiatry,71.55,6,3303.34,2973.0,330.33,3.3,9,30-39,Q2,0.3,0.1,0.45,7,174,3.33
+1468,3.0,Male,Belfast,Student,Provider C,Cancer,Pre-school,Single,0.0,22,11,General Practice,69.18,6,3408.53,2385.97,1022.56,2.23,15,0-9,Q1 (Lowest),0.27,0.3,0.68,3,176,3.67
+1469,15.0,Other,London,Student,Provider C,Diabetes,High school,Single,0.0,18,11,Endocrinology,62.72,9,3201.2,2240.84,960.36,3.17,4,10-19,Q1 (Lowest),0.5,0.3,0.22,6,171,3.0
+1470,46.0,Other,Edinburgh,Artist,Provider A,Cancer,Undergraduate,Married,41557.71,21,11,Rheumatology,67.48,10,3298.26,2638.61,659.65,3.05,8,40-49,Q2,0.48,0.2,0.38,2,178,3.5
+1471,47.0,Other,Birmingham,Lawyer,Uninsured,Diabetes,Master,Divorced,47826.47,17,9,Gastroenterology,59.06,5,2951.34,0.0,2951.34,2.88,10,40-49,Q4 (Highest),0.29,1.0,0.59,27,151,2.83
+1472,72.0,Other,Edinburgh,Retired,Uninsured,Heart Disease,Undergraduate,Married,42852.56,18,9,Pulmonology,80.56,4,3599.3,0.0,3599.3,2.56,11,70-79,Q2,0.22,1.0,0.61,2,171,3.0
+1473,27.0,Female,Liverpool,Lawyer,Provider A,Hypertension,Master,Divorced,45531.72,18,9,General Practice,60.94,7,2427.29,1941.83,485.46,2.67,10,20-29,Q3,0.39,0.2,0.56,25,145,3.0
+1474,28.0,Female,Glasgow,Nurse,Provider C,Hypertension,Undergraduate,Married,43532.1,21,11,Dermatology,61.24,2,3538.23,2476.76,1061.47,3.19,7,20-29,Q2,0.1,0.3,0.33,9,170,3.5
+1475,13.0,Other,Liverpool,Student,Provider A,Heart Disease,Middle school/junior high,Single,0.0,13,9,Orthopedics,54.92,8,1957.93,1566.34,391.59,2.54,8,10-19,Q1 (Lowest),0.62,0.2,0.62,1,141,2.17
+1476,21.0,Male,Edinburgh,Scientist,Provider C,Diabetes,Undergraduate,Single,47187.13,15,7,Orthopedics,75.87,6,2802.78,1961.95,840.83,3.0,7,20-29,Q4 (Highest),0.4,0.3,0.47,25,153,2.5
+1477,12.0,Other,London,Student,Provider C,Hypertension,Middle school/junior high,Single,0.0,11,9,General Practice,70.55,3,1704.81,1193.37,511.44,3.55,4,10-19,Q1 (Lowest),0.27,0.3,0.36,10,150,1.83
+1478,31.0,Other,London,Engineer,Provider B,Heart Disease,Master,Single,46016.86,28,12,Emergency,73.16,7,4574.18,4116.77,457.42,3.11,11,30-39,Q4 (Highest),0.25,0.1,0.39,9,172,4.67
+1479,11.0,Female,Glasgow,Student,Provider A,Heart Disease,Middle school/junior high,Single,0.0,14,8,General Practice,60.86,3,2448.93,1959.15,489.79,2.21,8,10-19,Q1 (Lowest),0.21,0.2,0.57,10,145,2.33
+1480,58.0,Female,Birmingham,Businessperson,Provider B,None,Master,Divorced,43510.29,21,9,General Practice,58.81,4,3354.1,2974.88,379.21,3.38,9,50-59,Q2,0.19,0.11,0.43,4,174,3.5
+1481,81.0,Female,Glasgow,Retired,Provider A,Hypertension,Master,Widowed,44316.45,39,12,General Practice,55.23,15,6189.11,4951.29,1237.82,3.1,14,80-89,Q3,0.38,0.2,0.36,3,175,6.5
+1482,65.0,Female,Birmingham,Retired,Uninsured,Heart Disease,Master,Divorced,47897.18,22,9,Psychiatry,63.73,9,3732.0,0.0,3732.0,3.36,6,60-69,Q4 (Highest),0.41,1.0,0.27,1,179,3.67
+1483,97.0,Male,London,Retired,Provider D,Hypertension,Undergraduate,Divorced,44523.02,21,10,General Practice,53.19,8,3515.52,3515.52,0.0,3.33,8,90-99,Q3,0.38,0.0,0.38,15,162,3.5
+1484,30.0,Male,Manchester,Teacher,Provider A,Hypertension,Master,Single,45109.83,24,10,General Practice,63.42,5,3175.86,2540.69,635.17,2.83,12,30-39,Q3,0.21,0.2,0.5,8,172,4.0
+1485,6.0,Other,London,Student,Provider D,Hypertension,Kindergarten,Single,0.0,21,10,Pulmonology,71.05,7,3144.31,3144.31,0.0,3.14,8,0-9,Q1 (Lowest),0.33,0.0,0.38,3,170,3.5
+1486,53.0,Other,Belfast,Lawyer,Provider B,Hypertension,Master,Divorced,45206.05,21,10,Dermatology,73.95,10,3798.32,3418.49,379.83,3.52,6,50-59,Q3,0.48,0.1,0.29,22,159,3.5
+1487,37.0,Female,Edinburgh,Businessperson,Provider D,Heart Disease,Undergraduate,Married,41543.04,24,13,Orthopedics,70.67,4,4435.81,4435.81,0.0,2.92,11,30-39,Q2,0.17,0.0,0.46,17,165,4.0
+1488,11.0,Female,London,Student,Provider A,None,Middle school/junior high,Single,0.0,19,11,General Practice,76.79,1,2727.25,2181.8,545.45,3.42,6,10-19,Q1 (Lowest),0.05,0.2,0.32,21,160,3.17
+1489,90.0,Female,Belfast,Retired,Provider A,Heart Disease,Master,Divorced,45027.19,26,12,Neurology,69.62,10,4305.83,3444.66,861.17,3.42,8,90-99,Q3,0.38,0.2,0.31,3,170,4.33
+1490,30.0,Male,Dublin,Scientist,Provider D,None,Master,Single,46105.65,27,12,ENT,69.61,8,3999.02,3999.02,0.0,3.52,7,30-39,Q4 (Highest),0.3,0.0,0.26,7,155,4.5
+1491,47.0,Male,Belfast,Businessperson,Provider A,Hypertension,Undergraduate,Married,45071.33,12,6,Psychiatry,69.33,5,1982.22,1585.78,396.44,2.92,4,40-49,Q3,0.42,0.2,0.33,29,145,2.0
+1492,43.0,Other,Liverpool,Teacher,Provider B,Cancer,Master,Widowed,44554.94,16,11,Gastroenterology,57.38,5,2781.03,2502.92,278.1,3.81,4,40-49,Q3,0.31,0.1,0.25,4,172,2.67
+1493,93.0,Male,Belfast,Retired,Provider A,Hypertension,Master,Divorced,47075.7,23,11,Orthopedics,68.87,3,4168.31,3334.65,833.66,2.39,14,90-99,Q4 (Highest),0.13,0.2,0.61,6,175,3.83
+1494,55.0,Other,Birmingham,Lawyer,Provider C,Hypertension,Undergraduate,Married,45303.85,13,9,Gastroenterology,73.23,1,2460.54,1722.38,738.16,2.46,8,50-59,Q3,0.08,0.3,0.62,24,151,2.17
+1495,23.0,Other,Glasgow,Businessperson,Provider D,Heart Disease,Undergraduate,Single,46714.43,21,12,Orthopedics,71.81,11,3992.28,3992.28,0.0,3.57,8,20-29,Q4 (Highest),0.52,0.0,0.38,2,168,3.5
+1496,4.0,Other,Belfast,Student,Provider B,Hypertension,Pre-school,Single,0.0,18,12,General Practice,58.67,3,2837.18,2553.47,283.72,3.22,6,0-9,Q1 (Lowest),0.17,0.1,0.33,13,165,3.0
+1497,69.0,Other,Dublin,Retired,Provider D,Cancer,Undergraduate,Married,45568.06,26,12,Dermatology,72.33,11,4043.6,4043.6,0.0,3.0,11,60-69,Q3,0.42,0.0,0.42,1,181,4.33
+1498,70.0,Male,London,Retired,Provider D,Hypertension,Master,Widowed,41541.12,24,10,Allergology,51.75,8,3674.98,3674.98,0.0,2.67,12,70-79,Q2,0.33,0.0,0.5,11,171,4.0
+1499,74.0,Other,Liverpool,Retired,Provider C,Cancer,Undergraduate,Married,46336.42,18,11,Psychiatry,49.78,8,2996.87,2097.81,899.06,3.33,4,70-79,Q4 (Highest),0.44,0.3,0.22,13,168,3.0
