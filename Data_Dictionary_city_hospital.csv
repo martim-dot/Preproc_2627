@@ -1,38 +1,75 @@
-Feature Name,Category,Definition & Calculation Logic
-Patient ID,Static / ID,"Unique identifier for each patient (1 row per patient, N=500)."
-Age,Static Demographic,"Patient age in years (most recent valid record, KNN-imputed if missing)."
-Gender,Static Demographic,"Patient gender (Female, Male, Other); standardized to most recent visit."
-City_of_Residence,Static Demographic,Patient city of residence across 8 UK/Irish cities.
-Profession,Static Socio-Economic,Patient occupation (standardized to most recent visit; <18 set to Student).
-Insurance_Provider,Static Financial,"Provider A, B, C, D, or 'Uninsured' for patients with no policy."
-Family_History,Static Clinical,"Recorded family medical history (Cancer, Diabetes, Heart Disease, Hypertension, None)."
-Education_Level,Static Socio-Economic,Highest educational attainment (Pre-school to PhD; KNN-imputed).
-Marital_Status,Static Demographic,"Marital status (Single, Married, Divorced, Widowed; standardized)."
-Approx_Annual_Income,Static Socio-Economic,Mean cleaned annual income (£) across patient consultations.
-Age_Group_10yr,Static Derived,"10-year age bracket (0-9, 10-19, ..., 90+) for demographic segmentation."
-Income_Quartile,Static Derived,Patient income quartile (Q1 Lowest to Q4 Highest).
-Total_Visits,Visit Behaviour,"Total number of hospital consultations between Jan 1 and Jun 30, 2024."
-Distinct_Departments,Visit Behaviour,Number of unique hospital departments visited by the patient.
-Most_Frequent_Department,Visit Behaviour,Modal (most frequently visited) department for the patient.
-Avg_Consultation_Duration,Visit Behaviour,Mean consultation duration in minutes (post-IQR Winsorization).
-Total_Consultation_Duration,Visit Behaviour,Cumulative consultation duration in minutes across all visits.
-Weekend_Visits,Visit Behaviour,Count of consultations occurring on Saturday or Sunday.
-Weekday_Visits,Visit Behaviour,Count of consultations occurring Monday through Friday.
-Weekend_to_Weekday_Ratio,Visit Behaviour,"Ratio of weekend visits to weekday visits (Weekend / max(1, Weekday))."
-Weekend_Visit_Share,Visit Behaviour,Proportion of total visits occurring on weekends.
-Total_Consultation_Price,Financial,Cumulative gross consultation cost (£) across all visits.
-Avg_Consultation_Price,Financial,Mean gross price (£) per consultation.
-Total_Insurance_Coverage,Financial,Cumulative amount (£) covered and paid by the insurance provider.
-Avg_Insurance_Coverage,Financial,Mean insurance coverage amount (£) per consultation.
-Total_Out_of_Pocket,Financial,Total out-of-pocket expenditure (£) paid by the patient (Price - Coverage).
-Avg_Out_of_Pocket,Financial,Mean out-of-pocket cost (£) per consultation.
-Out_of_Pocket_Ratio,Financial,Share of total consultation price paid out-of-pocket by the patient.
-Avg_Satisfaction_Rating,Satisfaction,"Mean consultation satisfaction score (1 = lowest, 5 = highest)."
-Min_Satisfaction_Rating,Satisfaction,Minimum satisfaction rating recorded across any visit.
-Max_Satisfaction_Rating,Satisfaction,Maximum satisfaction rating recorded across any visit.
-Low_Rating_Count,Satisfaction,Total count of dissatisfied visits with rating <= 2.
-Share_Low_Ratings,Satisfaction,Proportion of patient visits rated <= 2 (dissatisfaction rate).
-Days_Since_First_Visit,Recency & Activity,"Days elapsed from the patient's first visit to July 1, 2024."
-Days_Since_Last_Visit,Recency & Activity,"Days elapsed from the patient's most recent visit to July 1, 2024."
-Active_Span_Days,Recency & Activity,Number of days between the patient's first and last recorded visit.
-Visits_Per_Month,Recency & Activity,Average monthly consultation frequency over the 6-month period (Total_Visits / 6).
+index,Group,Definition,How it was calculated,Type
+Patient ID,Identifier,Unique patient identifier (primary key of the ABT).,Taken from the source data; one row per ID.,int64
+Age,Static,Patient age in years.,"Cleaned age (typos like 158 -> 58 corrected, gaps filled with the patient's modal age); constant per patient.",float64
+Gender,Static,"Female, Male or Other.",Patient's modal gender across visits (conflicting minority entries corrected).,str
+City,Static,City of residence.,Source 'City of Residence' (never changed within a patient).,str
+Profession,Static,Patient's profession.,Modal profession; patients under 18 recoded to 'Student'.,str
+Education_Level,Static,Highest education level.,Modal education level across visits (2 patients had isolated blanks).,str
+Marital_Status,Static,"Single, Married, Divorced or Widowed.",Modal value across visits (minority typing errors corrected).,str
+Family_History,Static,"Disease in the family history (Cancer, Diabetes, Heart Disease, Hypertension) or 'None reported'.",Source value; structural blanks recoded to 'None reported'.,str
+Insurance_Provider,Static,"Provider A-D, or 'Uninsured'.",Provider recorded on the patient's visits; recovered from the coverage rate where missing; blank + £0 coverage -> 'Uninsured'.,str
+Annual_Income,Static,Approximate annual income (£).,Median of the patient's valid recorded incomes (robust to visit-to-visit noise); recording errors > £500k excluded.,float64
+Atypical_Profile_Flag,Static,"1 if the patient is a doctor aged < 24 or a lawyer aged < 22 (unusual but plausible, kept).",Max over the patient's visits of flag_atypical_age_profession.,int64
+Age_Group,Static (derived),Life-stage band of the patient.,"pd.cut on Age: Child 0-11, Teen 12-17, Young Adult 18-34, Adult 35-49, Mature 50-64, Senior 65+.",str
+Income_Group,Static (derived),Income band.,"'No income' if Annual_Income = 0; otherwise tertiles of positive incomes (Low <= £43,100 < Medium <= £46,200 < High).",str
+Education_Rank,Static (derived),Ordinal encoding of education (0 Pre-school ... 7 PhD).,"Mapping: Pre-school 0, Kindergarten 1, Elementary 2, Middle 3, High school 4, Undergraduate 5, Master 6, PhD 7.",int64
+Insured,Static (derived),"1 if the patient has an insurance provider, 0 if self-pay.",Insurance_Provider != 'Uninsured'.,int64
+Insurance_Coverage_Rate,Static (derived),"Share of the price the patient's provider pays (A 0.8, B 0.9, C 0.7, D 1.0, Uninsured 0).",Rate learned from the data (median coverage / price per provider) and mapped to the provider.,float64
+Has_Family_History,Static (derived),1 if any family disease is recorded.,Family_History != 'None reported'.,int64
+Total_Visits,Visit behaviour,Number of consultations in Jan-Jun 2024.,Count of the patient's rows in the cleaned visit table.,int64
+Distinct_Departments,Visit behaviour,Number of different departments visited (1-13).,nunique(Department) per patient.,int64
+Avg_Consultation_Duration,Visit behaviour,Average consultation length (minutes).,Mean of Consultation Duration (invalid durations replaced by the patient's median).,float64
+Std_Consultation_Duration,Visit behaviour,Variability of consultation length (minutes).,Sample standard deviation of duration per patient.,float64
+Total_Time_Minutes,Visit behaviour,Total time spent in consultations (minutes).,Sum of Consultation Duration.,int64
+Most_Frequent_Department,Visit behaviour,Department the patient visited most often.,Mode of Department; ties broken alphabetically.,str
+Top_Department_Share,Visit behaviour,Share of the visits that went to the most frequent department.,max(department count) / Total_Visits.,float64
+Department_Diversity_Index,Visit behaviour,"How spread the visits are over departments (0 = one department, 1 = evenly over all 13).",Shannon entropy of the department shares divided by ln(13).,float64
+Emergency_Visits,Visit behaviour,Number of Emergency consultations.,Count of rows with Department = 'Emergency'.,int64
+Emergency_Share,Visit behaviour,Share of visits that were Emergency.,Emergency_Visits / Total_Visits.,float64
+Visits_Allergology,Visit behaviour (department mix),Number of visits to Allergology.,Count of the patient's rows with Department = 'Allergology'.,int64
+Visits_Cardiology,Visit behaviour (department mix),Number of visits to Cardiology.,Count of the patient's rows with Department = 'Cardiology'.,int64
+Visits_Dermatology,Visit behaviour (department mix),Number of visits to Dermatology.,Count of the patient's rows with Department = 'Dermatology'.,int64
+Visits_ENT,Visit behaviour (department mix),Number of visits to ENT.,Count of the patient's rows with Department = 'ENT'.,int64
+Visits_Emergency,Visit behaviour (department mix),Number of visits to Emergency.,Count of the patient's rows with Department = 'Emergency'.,int64
+Visits_Endocrinology,Visit behaviour (department mix),Number of visits to Endocrinology.,Count of the patient's rows with Department = 'Endocrinology'.,int64
+Visits_Gastroenterology,Visit behaviour (department mix),Number of visits to Gastroenterology.,Count of the patient's rows with Department = 'Gastroenterology'.,int64
+Visits_General_Practice,Visit behaviour (department mix),Number of visits to General Practice.,Count of the patient's rows with Department = 'General Practice'.,int64
+Visits_Neurology,Visit behaviour (department mix),Number of visits to Neurology.,Count of the patient's rows with Department = 'Neurology'.,int64
+Visits_Orthopedics,Visit behaviour (department mix),Number of visits to Orthopedics.,Count of the patient's rows with Department = 'Orthopedics'.,int64
+Visits_Psychiatry,Visit behaviour (department mix),Number of visits to Psychiatry.,Count of the patient's rows with Department = 'Psychiatry'.,int64
+Visits_Pulmonology,Visit behaviour (department mix),Number of visits to Pulmonology.,Count of the patient's rows with Department = 'Pulmonology'.,int64
+Visits_Rheumatology,Visit behaviour (department mix),Number of visits to Rheumatology.,Count of the patient's rows with Department = 'Rheumatology'.,int64
+Total_Spent,Financial,Total consultation price over the period (£).,Sum of Consultation Price (before insurance).,float64
+Avg_Consultation_Price,Financial,Average price per visit (£).,Mean of Consultation Price.,float64
+Max_Consultation_Price,Financial,Most expensive visit (£).,Max of Consultation Price.,float64
+Total_Insurance_Coverage,Financial,Total paid by the insurer (£).,Sum of Insurance Coverage (recomputed as rate x price where it was missing or inconsistent).,float64
+Total_Out_of_Pocket,Financial,Total paid by the patient (£).,Sum over visits of (Consultation Price - Insurance Coverage).,float64
+Avg_Coverage_per_Visit,Financial,Average insurer payment per visit (£).,Total_Insurance_Coverage / Total_Visits.,float64
+Avg_Out_of_Pocket_per_Visit,Financial,Average patient payment per visit (£).,Total_Out_of_Pocket / Total_Visits.,float64
+Insurance_Coverage_Ratio,Financial,Share of the total bill paid by the insurer (0-1).,Total_Insurance_Coverage / Total_Spent.,float64
+Out_of_Pocket_Share,Financial,Share of the total bill paid by the patient (0-1).,Total_Out_of_Pocket / Total_Spent = 1 - Insurance_Coverage_Ratio.,float64
+Avg_Satisfaction,Satisfaction,Average valid rating (1-5).,Mean of Satisfaction Level over valid ratings only (the invalid '6' is excluded).,float64
+Min_Satisfaction,Satisfaction,Lowest valid rating.,Min of valid ratings.,float64
+Max_Satisfaction,Satisfaction,Highest valid rating.,Max of valid ratings.,float64
+Std_Satisfaction,Satisfaction,Inconsistency of the ratings (std. dev.).,Sample std of valid ratings (0 if only one rating).,float64
+N_Valid_Ratings,Satisfaction,Number of valid ratings available for the patient.,Count of non-missing Satisfaction Level after cleaning.,int64
+Low_Rating_Share,Satisfaction,Share of valid ratings that are low (1 or 2).,mean(rating <= 2) over valid ratings.,float64
+Top_Rating_Share,Satisfaction,Share of valid ratings that are high (4 or 5).,mean(rating >= 4) over valid ratings.,float64
+Last_Rating,Satisfaction,Most recent valid rating.,Rating of the latest visit that has a valid rating.,float64
+Satisfaction_Trend,Satisfaction,Direction of the experience: change in rating per 30 days (>0 improving).,Slope of a least-squares line rating ~ time; 0 if < 3 ratings or all on one day.,float64
+N_Invalid_Ratings,Satisfaction,Number of ratings discarded as invalid (value 6).,Total_Visits - N_Valid_Ratings. Useful as a data-reliability indicator.,int64
+First_Visit_Date,Recency & activity,Date of the first visit in the period.,min(Visit Date).,datetime64[us]
+Last_Visit_Date,Recency & activity,Date of the last visit in the period.,max(Visit Date).,datetime64[us]
+Days_Since_Last_Visit,Recency & activity,Days between the last visit and the reference date 1 July 2024.,(2024-07-01 - Last_Visit_Date).days.,int64
+Days_Since_First_Visit,Recency & activity,Days between the first visit and the reference date.,(2024-07-01 - First_Visit_Date).days.,int64
+Tenure_Days,Recency & activity,Days between the first and the last visit.,(Last_Visit_Date - First_Visit_Date).days.,int64
+Visits_Jan,Recency & activity (monthly),Number of visits in Jan 2024.,Count of rows with Visit Date in Jan 2024.,int64
+Visits_Feb,Recency & activity (monthly),Number of visits in Feb 2024.,Count of rows with Visit Date in Feb 2024.,int64
+Visits_Mar,Recency & activity (monthly),Number of visits in Mar 2024.,Count of rows with Visit Date in Mar 2024.,int64
+Visits_Apr,Recency & activity (monthly),Number of visits in Apr 2024.,Count of rows with Visit Date in Apr 2024.,int64
+Visits_May,Recency & activity (monthly),Number of visits in May 2024.,Count of rows with Visit Date in May 2024.,int64
+Visits_Jun,Recency & activity (monthly),Number of visits in Jun 2024.,Count of rows with Visit Date in Jun 2024.,int64
+Visits_per_Month,Recency & activity,Average visits per month.,Total_Visits / 6 (observation window = 6 months).,float64
+Active_Months,Recency & activity,Number of months (of 6) with at least one visit.,Count of monthly columns > 0.,int64
+Avg_Days_Between_Visits,Recency & activity,Average gap between consecutive visits (days).,Tenure_Days / (Total_Visits - 1).,float64
+Visit_Trend,Recency & activity,Change in activity: visits in Apr-Jun minus visits in Jan-Mar (>0 growing).,sum(Visits_Apr..Jun) - sum(Visits_Jan..Mar).,int64
