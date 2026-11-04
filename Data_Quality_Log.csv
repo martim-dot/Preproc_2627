@@ -1,0 +1,20 @@
+Area,Issue,Rows affected,Patients affected,Decision,Justification
+Duplicates,Exact duplicate consultations,8,,Remove (keep first),Identical in all 16 columns including a 15-decimal price: the same record loaded twice.
+Age,"Impossible ages (>110, e.g. 118, 158, 195)",103,5,Correct (age - 100),Each is a plausible age with a leading '1'; corrected age agrees with profession and education.
+Age,Isolated missing values inside an otherwise complete patient,56,53,Impute (patient's modal value),The patient's other visits give the true value with certainty.
+Profession,Patients under 18 recorded with an adult profession,109,6,Correct (-> Student),"Income is £0 on every visit, education is school-level and marital status is Single: three variables agree they are children."
+Gender,Value changes between visits of the same patient,10,5,Correct (patient's modal value),A person's static attribute cannot change in 6 months; the minority entry is a typing error.
+Education Level,Isolated missing values inside an otherwise complete patient,29,2,Impute (patient's modal value),The patient's other visits give the true value with certainty.
+Marital Status,Value changes between visits of the same patient,5,4,Correct (patient's modal value),A person's static attribute cannot change in 6 months; the minority entry is a typing error.
+Income,"Values above £500,000 (extra digits)",21,10,Invalid -> re-estimate,Nothing between £120k and £1.1M: they are recording errors. Replaced by the patient's median valid income.
+Income,Missing income on some visits,154,133,Impute (patient median),"Income fluctuates by visit, so the median of the patient's other visits is the most robust estimate."
+Price,Price > 10x its department median (£25k-£40k),7,7,Correct (remove the 2 inserted digits),Two extra digits after the hundreds; 7/7 corrected prices fall inside the department's band and the insured ones match coverage/rate exactly.
+Duration,"Durations outside (15, 120) min (228-600)",10,10,Invalid -> impute (patient median),Valid durations are uniform 15-120 and unrelated to department; the next-highest value is a gap away.
+Insurance Provider,Provider missing on some visits of an insured patient,50,36,Impute (patient's provider),"Coverage on those rows follows the provider's fixed rate, so the patient is insured."
+Insurance Provider,Provider missing for all visits but coverage > 0,42,2,Infer from coverage rate,coverage/price = 0.7 / 0.9 identifies the provider exactly (see rule 2).
+Insurance Provider,No provider and coverage = £0 on every visit,1815,90,Recode as 'Uninsured',A blank provider always coincides with £0 coverage; keeping NaN would hide a real patient group (self-pay).
+Coverage,Missing coverage,49,,Recompute (rate x price),"Rate is fixed per provider (A 80%, B 90%, C 70%, D 100%), so the exact value is known - no median guess needed."
+Coverage,Coverage inconsistent with provider rate (incl. coverage > price),6,,Correct (rate x price),Rows off the fixed-rate line are errors; recomputed value never exceeds the price.
+Family History,Blank for entire patients (never partially),1990,99,Recode as 'None reported',"Blank is structural (no history recorded), not lost data; imputing a disease would invent medical information."
+Satisfaction,Rating = 6 on a 1-5 scale (36% of ENT & General Practice ratings),719,372,Invalid -> set to missing + flag,Concentrated in 2 departments; capping at 5 would make them look like the best-rated (artefact). Used valid ratings only.
+Profession,Very young doctors (<24) / lawyers (<22) with university education and income > £0,87,5,Keep + flag,"Unusual but possible, and age, education and income all agree with each other; nothing proves which field is wrong, so we do not alter them."
